@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASQ Est</title>
+    <!-- css links files -->
+    <link href="../../output.css" rel="stylesheet" />
+     <link rel="stylesheet" href="../../assets/css/all.css" />
+  <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css"
+    />
+    <style>
+      .ts-control {
+        border: 1px solid #e7e4e5 !important;
+        background-color: #fff !important;
+        z-index: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#F5F5F5] h-screen">
+    <!-- loader -->
+    <div class="loader fixed flex justify-center items-center z-50 bg-[#ffffff] top-0 bottom-0 left-0 right-0">
+      <div class="shapes-1"></div>
+      <div class="shapes-11"></div>
+    </div>
+    <!-- dashboard -->
+    <div class="parentContainerDash flex justify-end items-start">
+      <!-- Sidebar -->
+       <div id="sidebar" class="fixed bg-[#FFFFFF] border-l border-[#F0F0F0] min-h-screen z-40 top-0 bottom-0 right-0 w-[250px] px-6 py-10 overflow-y-auto transform translate-x-full lg:translate-x-0 transition-transform duration-300">
+        <aside class="flex flex-col justify-between items-start">
+          <a href="dashboard.html">
+            <img
+              src="../../assets/images/Frame 1618873305.png"
+              alt=""
+            />
+          </a>
+          <div class="links flex flex-col items-start gap-8 mt-10">
+            <a
+              href="dashboard.html"
+              class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+            >
+              <div class="relative w-5 h-5">
+                <img
+                  src="../../assets/images/dashboard icons/Dashboard.png"
+                  class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                />
+            
+              </div>
+              لوحة التحكم
+            </a>
+
+            <a
+              href="productsList.html"
+              class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+            >
+              <div class="relative w-5 h-5">
+                <img
+                  src="../../assets/images/dashboard icons/bag.png"
+                  class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                />
+            
+              </div>
+              قائمة المنتجات
+            </a>
+
+            <a
+            href="categoriesList.html"
+            class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+          >
+            <div class="relative w-5 h-5">
+              <img
+                src="../../assets/images/category.png"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+              />
+          
+            </div>
+            الأقسام
+          </a>
+
+            <a
+              href="ordersMangament.html"
+              class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+            >
+              <div class="relative w-5 h-5">
+                <img
+                  src="../../assets/images/dashboard icons/box-add.png"
+                  class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                />
+              </div>
+              إدارة الطلبات
+            </a>
+            <a
+              href="usersMangament.html"
+              class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+            >
+              <div class="relative w-5 h-5">
+                <img
+                  src="../../assets/images/dashboard icons/user-octagon.png"
+                  class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                />
+              </div>
+              إدارة العملاء
+            </a>
+            <a
+              href=""
+              class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+            >
+              <div class="relative w-5 h-5">
+                <img
+                  src="../../assets/images/dashboard icons/login.png"
+                  class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                />
+              </div>
+              تسجيل الخروج  
+            </a>
+          </div>
+        </aside>
+     
+      </div>
+      <div class="main lg:mr-[260px] my-2 pl-3 px-3 lg:px-0 lg:pl-3 w-full">
+        <header
+          class="bg-white w-full rounded-xl py-2 px-4 md:px-12 flex justify-between items-center border border-[#24242429] z-30"
+        >
+          <p class="text-[#064C50] text-sm md:text-lg">
+            مرحبا<span class="hidden md:inline"> بعودتك</span>,
+            <span class="font-semibold">عمر!</span>
+          </p>
+
+          <div class="user flex justify-between items-center gap-4 md:gap-8">
+            <div class="flex justify-start items-center gap-2">
+              <img
+                src="../../assets/images/Frame 1000001132.png"
+                class="w-10 h-10 md:w-12 md:h-12 rounded-full"
+                alt=""
+              />
+              <div class="info text-xs md:text-sm">
+                <h1 class="text-[#064C50] font-bold">عمر مشتهى</h1>
+                <p class="text-[#2424249d] hidden sm:block">
+                  example@example.com
+                </p>
+              </div>
+            </div>
+            <div
+              class="activeAccount bg-[#E6F4F5] flex justify-between items-center gap-1 md:gap-2 py-1 px-2 rounded-full text-xs md:text-sm"
+            >
+              <span
+                class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-[#72D84B]"
+              ></span>
+              <span class="hidden sm:block">نشط</span>
+            </div>
+          </div>
+
+          <!-- زر القائمة يظهر فقط في الشاشات الصغيرة -->
+          <button
+            id="toggleSidebar"
+            class="lg:hidden bg-white w-8 h-8 p-1 rounded-md shadow-md"
+          >
+            <i class="fas fa-bars text-lg"></i>
+          </button>
+        </header>
+        <div class="flex flex-wrap justify-between items-start gap-4 mt-4 md:flex-nowrap">
+          <div class="flex flex-col gap-2 w-full">
+          <div class="bg-[#FFFFFF] border-[#E0E0E0] rounded-xl p-2 ">
+                  <h1 class="text-[#383E49] font-medium text-xl">أضف منتج</h1>
+                  <form action="" class="w-full my-4">
+                    <!-- inputs -->
+                    <div class="flex justify-center items-center w-full">
+                      <div class="relative w-28 h-28">
+                        <img id="profileImage" src="../../assets/images/543989_main.jpg 1 (1).png"
+                          class="w-28 h-28 object-cover rounded-full" alt="Profile" />
+                        <label for="fileInput"
+                          class="absolute bottom-0 right-0 top-0 left-0 bg-[#00000042] p-1 rounded-full cursor-pointer flex justify-center items-center">
+                          <img src="../../assets/images/pencil-edit-01.png" class="" alt="Edit" />
+                        </label>
+                        <input type="file" id="fileInput" accept="image/*" class="hidden" />
+                      </div>
+                    </div>
+                    <div class="w-full grid grid-cols-1 gap-2 my-4">
+                    <div class="formGroup mt-2">
+                      <label for="pName" class="text-[#242424] font-semibold"
+                        >أسم القسم</label
+                      >
+                      <input
+                        type="text"
+                        id="pName"
+                        class="border border-[#E7E4E5] mt-2 w-full rounded-lg py-3 px-5"
+                        placeholder="أكتب أسم المنتج"
+                      />
+                    </div>
+                    <div class="formGroup mt-2">
+                      <label for="discription" class="text-[#242424] font-semibold">وصف المنتج</label>
+                     <textarea name="" class="border border-[#E7E4E5] mt-2 w-full rounded-lg py-3 px-5" id=""></textarea>
+                    </div>
+                  
+                    <button
+                      class="w-full cursor-pointer py-3 mt-4 rounded-lg bg-[#064C50] font-bold text-white"
+                    >
+                      اضف القسم
+                    </button>
+                  </div>
+                  </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/script.js"></script> 
+       <script src="https://cdn.jsdelivr.net/npm/tom-select"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </body>
+</html>

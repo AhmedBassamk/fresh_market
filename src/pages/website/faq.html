@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASQ Est</title>
+  <!-- css links files -->
+  <link href="../../output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/all.css" />
+  <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+  <link rel="stylesheet" href="../../assets/css/hamburgers.min.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body class="bg-[#F6FAF6]">
+  <!-- loader -->
+  <div class="loader fixed flex justify-center items-center z-50 bg-[#064C50] transition-all top-0 bottom-0 left-0 right-0">
+    <div class="flex justify-center items-center overflow-hidden w-fit">
+      <img src="../../assets/images/Frame 41125890.png" class="animationLoaderImage" alt="">
+      <div class="spinner-5"></div>
+    </div>
+  </div>
+  <div class="menu transition translate-x-full fixed top-0 bottom-0 z-50 right-0 bg-[#064C50] w-[384px] flex flex-col">
+    <div class="menuLogo my-5 mr-4">
+      <a href=""><img src="../../assets/images/Frame 41125890.png" alt=""></a>
+    </div>
+    <a href=""
+      class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+        src="../../assets/images/menu/profile-circle.png" alt=""> معلومات الحساب</a>
+    <a href=""
+      class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+        src="../../assets/images/menu/task-square.png" alt=""> طلباتي</a>
+    <a href=""
+      class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+        src="../../assets/images/menu/heart.png" alt=""> المنتجات المحفوظة</a>
+    <a href=""
+      class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+        src="../../assets/images/menu/empty-wallet.png" alt=""> محفظتي</a>
+    <a href=""
+      class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+        src="../../assets/images/menu/location.png" alt=""> العنوان</a>
+    <a href=""
+      class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+        src="../../assets/images/menu/logout.png" alt=""> تسجيل الخروج</a>
+  </div>
+  <div class="container mx-auto">
+    <header class="mt-3 mb-5 bg-[#064C50] flex flex-row-reverse justify-between items-center z-40 py-3 px-4 rounded-lg">
+      <div class="images flex justify-start items-center gap-3">
+        <a href="shoppingCart.html"
+          class="cartHeader bg-[#fff] relative flex justify-center items-center w-[48px] h-[48px] object-cover rounded-full">
+          <img src="../../assets/images/Icon.png" class="w-5 h-5" alt="" />
+          <span
+            class="w-4 h-4 absolute top-2 right-2 text-base rounded-full text-white flex justify-center items-center bg-[#EB5E5A]">2</span>
+        </a>
+        <a href="" class="personalPageLink">
+          <img src="../../assets/images/Rectangle 44.png"
+            class="w-[48px] h-[48px] border border-dashed border-[#AD9D44] rounded-full p-0.5" alt="" />
+        </a>
+      </div>
+      <div class="flex paraHeader">
+        <img src="../../assets/images/Group 72.png" alt="" />
+        <p class="text-[#fff] font-bold">
+          اطلب الآن واستلم طلبك خلال 15
+          <span class="text-[#AD9D44]">دقيقة فقط!</span>
+        </p>
+      </div>
+      <form action="" class="relative">
+        <input type="text" name="" placeholder="ابحث عن البقالة أو الخضروات أو اللحوم"
+          class="searchInput bg-white w-[350px] py-3 pr-13 pl-5 rounded-full" id="" />
+        <button class="text-emerald-700 absolute right-6 top-3">
+          <img src="../../assets/images/Icon (1).svg" class="w-5 h-5" alt="" />
+        </button>
+        <div class="searchPopup hidden absolute top-15 px-5 py-4 bg-white shadow-md rounded-lg w-[690px]">
+          <h3 class="font-bold text-xl text-[#064C50] mb-3">عمليات البحث الموصى بها</h3>
+          <div class="muasaa">
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+          </div>
+          <h3 class="font-bold text-xl text-[#064C50] my-3">أشهر عمليات البحث</h3>
+          <div class="famous flex flex-wrap justify-between items-center gap-2">
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </form>
+      <a href="index.html" class="logo">
+        <img src="../../assets/images/Frame 41125890.png" class="imgLogo" alt="" />
+        <img src="../../assets/images/Vector.png" class="responsiveLogo hidden" alt="">
+      </a>
+      <div class="hamburger hamburger--slider">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </header>
+    <!-- menu -->
+    <h1 class="text-3xl font-bold text-[#064C50] mt-10 mb-2">الأسئلة الشائعة</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
+      <!-- القائمة الجانبية -->
+      <div class="bg-white p-4 rounded-lg shadow-md col-span-1">
+        <div class="flex lg:hidden justify-between items-center mb-4">
+          <h3 class="font-bold text-lg">القائمة</h3>
+          <button id="mobileMenuToggle" class="text-[#064C50]">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="mt-4 space-y-2 hidden lg:block" id="sideMenu">
+          <li
+            class="links_ px-2 py-4 lg:py-7 cursor-pointer flex items-center justify-between transition hover:bg-[#F5FAFA] rounded"
+            data-target="account-info">
+            <div class="flex justify-start items-center gap-2">
+              <img src="../../assets/images/money (1) 3.png" alt="" class="w-5 lg:w-auto">
+              <span class="text-sm lg:text-base">الإرجاع</span>
+            </div>
+            <img src="../../assets/images/Right.png" alt="">
+          </li>
+          <li
+            class="links_ px-2 py-7 cursor-pointer flex items-center justify-between transition hover:bg-[#F5FAFA] rounded"
+            data-target="close">
+            <div class="flex justify-start items-center gap-2">
+              <img src="../../assets/images/x.png" alt="">
+              <span>الإلغاء</span>
+            </div>
+            <img src="../../assets/images/Right.png" alt="">
+          </li>
+          <li
+            class="links_ px-2 py-7 cursor-pointer flex items-center justify-between transition hover:bg-[#F5FAFA] rounded"
+            data-target="saved-products">
+            <div class="flex justify-start items-center gap-2">
+              <img src="../../assets/images/privacy-policy (2) 3.png" alt="">
+              <span>سياسة الخصوصية</span>
+            </div>
+            <img src="../../assets/images/Right.png" alt="">
+          </li>
+          <li
+            class="links_ px-2 py-7 cursor-pointer flex items-center justify-between transition hover:bg-[#F5FAFA] rounded"
+            data-target="saved-product">
+            <div class="flex justify-start items-center gap-2">
+              <img src="../../assets/images/terms-and-conditions (1) 1.png" alt="">
+              <span>الشروط و الاحكام</span>
+            </div>
+            <img src="../../assets/images/Right.png" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <!-- محتوى الصفحة -->
+      <div class="bg-white p-4 lg:p-6 rounded-lg shadow-md col-span-1 lg:col-span-2" id="content">
+        <!-- Content sections remain the same but add responsive text classes -->
+        <div id="account-info" class="content-section pt-8">
+          <h2 class="text-xl font-bold text-[#064C50] mb-4">كيف يمكن إرجاع المنتجات؟</h2>
+          <p class="mt-2 text-[14px] text-[#042E30] font-medium">حالة التسوق الإلكتروني: اتصل بنا على 16555 واطلب
+            استرداد المنتج أو إعادته إلى عامل التوصيل مع نسخة من Air Waybill (الإيصال).<br>
+            حالة الشراء من أحد فروع فريش ماركت (من داخل الفرع): عليك التوجه إلى كاونتر خدمة العملاء في الفرع الذي اشتريت
+            منه المنتج مع الإيصال.</p>
+          <div class="px-5 my-4">
+            <h2 class="text-xl font-bold text-[#064C50] mb-4">سياسة الإرجاع</h2>
+            <div class="my-5">
+              <h4 class="underline font-medium">سياسة الإرجاع</h4>
+              <ul class="list-disc">
+                <li class="text-[#042E30] my-5 font-medium">يمكن إرجاع الاصناف المباعة خلال 30 يوم من تاريخ الشراء على
+                  ان تكون بحاله شرائها وبكامل محتوياتها والصندوق الخارجى والتغليف الداخلي وفي حاله وجود عيب صناعه
+                  بالمنتج يتم احضار تقرير فني من الشركه ذات الصله عن طريق العميل وذلك من اليوم الاول لتاريخ الشراء. 
+                </li>
+                <li class="text-[#042E30] my-5 font-medium">طريقه استرداد القيمه المدفوعه للاصناف المرتجعه هي نفس طريقه
+                  الدفع من قبل ( فى حالة الدفع بنقاط العضوية برجاء التوضيح)</li>
+                <li class="text-[#042E30] my-5 font-medium">في حاله التوصيل عن طريق المورد سيتم الاستبدال او الإرجاع بعد
+                  وصول تاكيد خطي من الوكيل يفيد بإستلام المنتج من عدمه.</li>
+                <li class="text-[#042E30] my-5 font-medium">لايسمح بالاحتفاظ بالاصناف الخاصه بالعملاء في حاله التوصيل
+                  المنزلي اكثر من 7 ايام من تاريخ الشراء وفي حاله عدم الاستلام يحق للعميل استرداد المبلغ فقط حسب شروط
+                  الإرجاع ولايحق للعميل المطالبه بالمنتج. </li>
+                <li class="text-[#042E30] my-5 font-medium">في حاله استلام العميل المنتج بنفسه يتم الاستلام في غضون 24
+                  ساعه وفي حاله عدم الاستلام في نفس اليوم يحق للعميل استرداد المبلغ المدفوع فقط حسب شروط الإرجاع ولايحق
+                  للعميل المطالبه بالمنتج. </li>
+                <li class="text-[#042E30] my-5 font-medium">يفقد العميل ضمان المنتج في حالة عدم وجود فاتورة الشراء وفي
+                  حاله عدم تركيب المنتج عن طريق الوكيل.</li>
+                <li class="text-[#042E30] my-5 font-medium">لا يتم عمل مرتجع او استخراج فاتوره بدل فاقد باسم شركه او
+                  مؤسسه غير شخص بذاته الا باحضار خطاب من الجهه الصادر باسمها الفاتوره لتنفيذ المرتجع واظهار اثبات
+                  الشخصيه المتمم للبيانات المدونه بالخطاب</li>
+                <li class="text-[#042E30] my-5 font-medium">  في حالة رغبة العميل استرجاع المنتج أو المنتجات المطلوبة
+                  بدون إبداء أي أسباب واضحة بخلاف حالات وجود عيوب في المنتج، يتم استرجاع المنتج أو المنتجات على أن يكون
+                  المنتج أو المنتجات سليمة بالكامل وفي حالة شراءها، على أن يتحمل العميل مصاريف توصيل المنتجات المسترجعه
+                  وذلك لكل انواع المنتجات الغذائيه منها و الغير غذائي.</li>
+              </ul>
+              <h4 class="font-bold text-[#042E30]">رد قيمة المنتجات في حالة الاسترجاع بدون سبب:</h4>
+              <ol class="list-disc">
+                <li class="text-[#042E30] my-5 font-medium">في حالة الأجهزة الإلكترونية، لا يتم رد المبلغ إلا بعد أن
+                  يُفحص المنتج خلال 72 ساعة من وقت وتاريخ الإستلام بشرط تطابق المنتج لحالة شرائه وأن يكون بكامل
+                  محتوياته.</li>
+                <li class="text-[#042E30] my-5 font-medium">في حالة المنتجات الغذائية يتم رد المبلغ في حالة أن العميل
+                  قام بالإبلاغ في نفس يوم الاستلام على أن تكون المنتجات بحالة سليمة و مطابقة لحالة شراءها.</li>
+                <li class="text-[#042E30] my-5 font-medium">يستثنى من ذلك المنتجات التي يقرها القانون ويمنع استبدالها
+                  أصناف العناية الشخصية والملابس وخلافه.</li>
+              </ol>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">يستثني من ذلك:</h4>
+              <ul class="list-disc">
+                <li class="text-[#042E30] my-5 font-medium">اجهزه الكمبيوتر والاب توب واجهزه المحمول والكاميرات
+                  ومستلزماتها لايسمح بالإرجاع او الاستبدال في حاله فتح العبوه الا في حاله وجود عيب صناعه وبتقرير فني من
+                  الوكيل عن طريق العميل.</li>
+                <li class="text-[#042E30] my-5 font-medium">لايسمح اطلاقا إرجاع او استبدال منتجات العنايه بالصحه
+                  والملابس الداخليه وماكينات تهذيب الشعر وماكينات نزع الشعر والساعات وكل ما يلامس البشرة مباشرة في حاله
+                  فتح العبوه الا في حاله وجود عيب صناعة وبتقرير فني من الوكيل عن طريق العميل وذلك حفاظا علي الصحة
+                  العامة.</li>
+                <li class="text-[#042E30] my-5 font-medium">لايسمح اطلاقا إرجاع منتجات برامج الكمبيوتر واسطوانات
+                  الموسيقي والالعاب وكل مايمكن نسخه وفقا لقانون المصنفات الفنيه في حاله فتحها وفي حاله وجود عيب صناعة ،
+                  سيتم الاستبدال بذات المنتج.</li>
+                <li class="text-[#042E30] my-5 font-medium">اذا كانت السلعه من السلع التي تصنع بناء علي مواصفات خاصه
+                  حددها المستهلك وكانت السلعه مطابقه لهذه المواصفات.</li>
+              </ul>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">تنبيه مهم:</h4>
+              <p class="mt-2 text-[#042E30] font-medium">نحن نوصي بشده الاحتفاظ بالعبوه ومواد التغليف لمده لاتقل عن 30
+                يوم من تاريخ الشراء</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">الإرجاع والاستبدال:</h4>
+              <ul class="list-disc">
+                <li class="text-[#042E30] my-5 font-medium">تسري سياسة الإرجاع الخاصة بنا لمدة 30 يوماً من تاريخ استلام
+                  المنتج، وتسري فقط إذا كان المنتج جديداً، وفي حالة تسمح بإعادة بيعه، وكانت المكونات الاستهلاكية
+                  والملحقات لا تزال مغلقة مع وجود العبوة وجميع مواد التغليف. وبناءً على هذا، يتم استبدال المنتج أو
+                  استرداد قيمته خلال 30 يوماً.</li>
+                <li class="text-[#042E30] my-5 font-medium">يمكن إرجاع و/أو استبدال المنتجات التي يتم شراؤها عبر الموقع
+                  الإلكتروني freshmarket.com عن طريق الاستلام باليد أو بتوصيلها مباشرةً إلى أقرب فرع فريش ماركت. يرجى
+                  التأكد من أن المنتج (المنتجات) المرتجع مرفق معه تأكيد الطلب ونسخة من إشعار التوصيل، مع جميع الملحقات
+                  والهدايا المجانية.</li>
+                <li class="text-[#042E30] my-5 font-medium">إذا كنت قد استلمت منتجاً معيباً (كأن يكون تم توصيله إليك
+                  وفيه قطع تالفة أو مفقودة، أو به أي تلف واضح)، فيمكن إرجاعه واستبداله، أو الحصول على المبلغ المدفوع
+                  بالكامل عند الموافقة.</li>
+              </ul>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">يرجى تذكر :</h4>
+              <ul class="list-disc">
+                <li class="text-[#042E30] my-5 font-medium">يجب أن يكون المنتج (المنتجات) في عبوته الأصلية وليس مفتوحاً،
+                  مع وجود تأكيد الطلب الأصلي الخاص بالمنتج وإشعار التوصيل والملحقات والهدايا المجانية.</li>
+                <li class="text-[#042E30] my-5 font-medium">إذا رغب العميل في استرداد قيمة المنتج، فيمكنه استرداد
+                  الأموال من أقرب متجر فريش ماركت، بعد تأكيد فريق خدمة ما بعد البيع لدينا باستلامه هذا المنتج.</li>
+                <li class="text-[#042E30] my-5 font-medium">إذا كان العميل قد دفع ببطاقة الائتمان، فسيتم رد القيمة إلى
+                  حسابه، وستُرسل رسالة تأكيد إليه عبر البريد الإلكتروني. إذا كان العميل قد دفع نقداً، فسيتم رد القيمة
+                  نقداً.</li>
+                <li class="text-[#042E30] my-5 font-medium">لمزيد من المعلومات، نرجو ألا تترددوا في الاتصال بنا على
+                  16555. فنحن نسعد كثيراً بخدمتكم.</li>
+              </ul>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">تعهدنا بالإرجاع والاستبدال:</h4>
+              <ul class="list-disc">
+                <li class="text-[#042E30] my-2 font-medium">الإرجاع خلال 30 يوماً تسري سياسة الإرجاع لدينا لمدة 30 يوماً
+                  تبدأ من تاريخ استلام المنتج.</li>
+                <li class="text-[#042E30] my-2 font-medium">سهولة الإرجاع والاستبدال يمكنكم زيارتنا في أقرب فرع لكم في
+                  مصر.</li>
+                <li class="text-[#042E30] my-2 font-medium">استرداد قيمة المنتج إذا كان المنتج معيباً عند التوصيل* (بعد
+                  موافقة خدمة ما بعد البيع).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="close" class="content-section pt-8 hidden">
+          <h2 class="text-xl font-bold text-[#064C50] mb-4">الإلغاء</h2>
+          <p>- يجوز للعميل إلغاء الطلب قبل استلامه من المخازن. - قد نطلب معلومات إضافية قبل قبول أي طلب لضمان مستوى الخدمة. - سوف نتصل بك إذا تم إلغاء طلبك بالكامل أو أي جزء منه أو إذا كانت هناك حاجة إلى معلومات إضافية لقبول طلبك. - إذا تم إلغاء الطلب ، فسيتم رد ال</p>
+        </div>
+        <div id="saved-products" class="content-section pt-8 hidden">
+          <h2 class="text-xl font-bold text-[#064C50] mb-4">سياسة الخصوصية</h2>
+          <div class="px-5">
+            <ul class="list-disc">
+              <li class="text-[#042E30] my-5 font-medium">عملاؤنا هم أولويتنا الأولى. لهذا السبب تأتي الخصوصية على رأس
+                أولوياتنا أيضًا عندما يتعلق الأمر بخدمة العملاء. تطور المعلومات التي تشاركها مع فريش ماركت من المنتجات
+                والخدمات وبالتالي تمنحك أفضل تجربة تسوق.</li>
+              <li class="text-[#042E30] my-5 font-medium">تتضمن سياستنا الحماية والاستخدام المفيد لمعلوماتك الشخصية
+                وتجربة التسوق الخاصة بك. المعلومات الشخصية هي المعلومات التي تحدد هويتك أو يمكن ربطها بشكل معقول
+                بالمعلومات التي تحدد هويتك. على سبيل المثال، عند تقديم طلب شراء عبر الإنترنت، فإننا نجمع معلومات شخصية
+                مثل الاسم والعنوان ورقم الهاتف وخياراتك للمنتجات. تساعدنا هذه المعلومات الشخصية في تزويدك بتجربة أفضل
+                لخدمة العملاء فضلاً عن الأفكار المبتكرة لتطوير منتجاتنا.</li>
+              <li class="text-[#042E30] my-5 font-medium">نستخدم معلوماتك الشخصية لتوفير الخدمات التي طلبتها، بما في ذلك
+                معالجة طلباتك والمبالغ المستردة وإدارة الحسابات التي تمتلكها معنا. نحن نعمل على تخصيص الرسائل التسويقية
+                التي نرسلها إليك وجعلها أكثر صلة وإثارة للاهتمام بناءً على معلوماتك الشخصية.</li>
+              <li class="text-[#042E30] my-5 font-medium">يساعدنا سلوك التصفح عبر الإنترنت أيضًا على فهمك كعميل وبالتالي
+                تزويدك بالعروض والخدمات التي تحتاجها للحصول على تجربة تسوق أفضل. ستساعدنا معلوماتك الشخصية في الإعلان
+                عبر الإنترنت أيضًا وتُقاس فعالية اتصالاتنا التسويقية بناءً على تجربتك. يمكننا الاتصال بك بشأن خدماتنا من
+                خلال رقم الهاتف والبريد الإلكتروني ومنشورات وسائط التواصل الاجتماعية الخاصة بك. نحن ندير العروض
+                الترويجية والحملات والمسابقات بناءً على معلوماتك الشخصية وخيارات التسوق الخاصة بك. نقوم بتحليل المعلومات
+                حول كيفية استخدامك لخدماتنا لإدارة وتحسين موقعنا على الويب وتطبيق الهاتف المحمول والخدمات والمتاجر وطرق
+                الاتصال بك.</li>
+              <li class="text-[#042E30] my-5 font-medium">من مصلحتنا حماية معلوماتك الخاصة لأن عملائنا على رأس قائمتنا.
+              </li>
+              <li class="text-[#042E30] my-5 font-medium">ترحب شركة فريش ماركت بزيارتك لهذا الموقع ونسعد بتقديم جميع
+                المعلومات والخدمات، وفيما يلي البنود والقيود القانونية المفروضة على جميع زائري هذا الموقع والمواقع ذات
+                الصلة:</li>
+            </ul>
+            <ol class="list-decimal">
+              <li class="text-[#042E30] my-5 font-medium">يشير دخولك على الموقع إلى معرفتك وقبولك بهذه البنود والشروط
+                وموافقتك عليها كاملة وهو تأكيد منك بالالتزام بمضمون تلك الشروط الخاصة بشركة فريش ماركت وموقعها
+                الإلكتروني.</li>
+              <li class="text-[#042E30] my-5 font-medium">لا يحق تسجيل عضوية لمن هم دون الـ 18 عام ولموقع شركة فريش
+                ماركت الحق بإلغاء أي عضوية لأي عضو لم يتجاوز الـ 18 عام.</li>
+              <li class="text-[#042E30] my-5 font-medium">عند التسجيل على الموقع تكون ملتزماً بإمدادنا ببعض المعلومات
+                الخاصة بإكمال عملية التسجيل وبإدراج كلمة سر خاصة بك وعند قبول الطلب ستكون عضواً علي الموقع الالكتروني.
+              </li>
+              <li class="text-[#042E30] my-5 font-medium">الموقع غير مسئول عن حفاظك علي سرية المعلومات وكلمة السر الخاصة
+                بك ، في حالة أنك قمت بإعطائها لشخص آخر وفي حالة وجود أي عمليات قد تكون غير موثوقة فللموقع الحق في إيقاف
+                الحساب نهائياً دون الرجوع إليك.</li>
+              <li class="text-[#042E30] my-5 font-medium">تمنح شركة فريش ماركت العميل ترخيصًا غير قابل للتحويل أو
+                الإلغاء لكي يستخدم الموقع بموجب الشروط والأحكام المحدَّدة، وتكمن غاية هذا الترخيص في التسوق لشراء سلعٍ
+                شخصية تُباع على الموقع أو تصفح الموقع للحصول على أسعار أو مواصفات منتجاتنا، ويُحظر الاستخدام لأغراض
+                تجارية أو الاستخدام باسم أي طرف ثالث، باستثناء ما تم السماح به من قبلنا بوضوح وشفافية سلفاً، ويؤدي أي
+                خرق أو إخلال بهذه الشروط والأحكام إلى إلغاء فوري للترخيص الممنوح في هذه الفقرة من دون أي سابق إنذار لك.
+              </li>
+              <li class="text-[#042E30] my-5 font-medium">لتزم موقع شركة فريش ماركت بالحفاظ الكامل على سرية جميع
+                البيانات الخاصة بكل العملاء المسجلين على الموقع ولا يتم تزويد أي جهة بأي معلومات خاصة عن حسابك إلا الاسم
+                ورقم التليفون والعنوان وذلك في حالة قيامك بأي عملية شراء.</li>
+              <li class="text-[#042E30] my-5 font-medium">المحتويات التي يتضمنها هذا الموقع على سبيل المثال لا الحصر هي
+                النصوص أو الرسومات أو الصور أو الأصوات أو الفيديوهات أو التنزيلات أو الروابط أو رموز المصادر "الخدمات
+                والمواد" تعد ملكاً لموقع فريش ماركت ومحمية بموجب حقوق النشر طبقاً لقانون حماية الملكية الفكرية فقد
+                استثمرت فريش ماركت فيها المال والوقت والجهد لتطويرها.</li>
+              <li class="text-[#042E30] my-5 font-medium">تحتفظ شركة فريش ماركت بجميع حقوق النشر والعلامات التجارية
+                وبراءات الاختراع وحقوق الملكية الفكرية الأخرى في الخدمات والمواد، وتقتصر المواد والخدمات فقط على عملاء
+                شركة فريش ماركت ومتوفرة فقط من أجل راحتهم ولا تمنحك شركة فريش ماركت أي حقوق ملكية أو ترخيص لأي من هذه
+                الخدمات والمواد.</li>
+              <li class="text-[#042E30] my-5 font-medium">يحظر بشدة أي استخدام أو إعادة إنتاج غير مصرح به للمعلومات
+                والخدمات والمواد وحقوق الملكية التي يتضمنها هذا الموقع وحقوق الغير أو التى تخالف النظام العام أو الآداب
+                العامة أو الملكية الفكرية لحقوق الغير.</li>
+              <li class="text-[#042E30] my-5 font-medium">لا تتحمل شركة فريش ماركت أي مسؤولية عن أي فقد أو أضرار تنشأ
+                بشكل مباشر أو غير مباشر من استخدام هذا الموقع بما في ذلك الفقد أو الأضرار الخاصة أو العارضة أو اللاحقة،
+                أو الفقد أو الأضرار الناجمة عنه بأية طريقة، بما في ذلك على سبيل المثال لا الحصر، التي تنشأ عن أي عيب أو
+                خطأ أو نقص أو عدم دقة في هذا الموقع.</li>
+              <li class="text-[#042E30] my-5 font-medium">لا تتحمل شركة فريش ماركت أو تقبل أي مسؤولية بشأن تمكينك من
+                الربط بموقع آخر أو عواقب التعامل مع محتويات موقع آخر، وتهدف أي روابط تشعبية داخل هذا الموقع إلى تقديم
+                المعلومات وتوفير الراحة من أجلك ولم تقم شركة فريش ماركت بتحليلها أو التحقق منها ولا ينطوي تضمين فريش
+                ماركت لهذه الروابط التشعبية على أي موافقة على المواد الموجودة على أي من هذه المواقع ولا تتحمل أي مسؤولية
+                جنائية أو مدنية تبعاً لذلك.</li>
+              <li class="text-[#042E30] my-5 font-medium">توصي شركة فريش ماركت عملاءها الكرام بالتأكد من شروط وأحكام
+                القيود القانونية للمواقع الأخرى والتي قد يتضرر منها الغير من خلال موقع فريش ماركت والتي تخلي شركة فريش
+                ماركت مسؤوليتها من ذلك طبقاً للفقرة السابقة.</li>
+              <li class="text-[#042E30] my-5 font-medium">في حال شعورك بالقلق على بياناتك يحق لك طلب الوصول إلى البيانات
+                الشخصية التي نحملها عنك أو سبق ونقلتها إلينا ، ويحق لك أن تطلب تصحيح أي أخطاء في بياناتك الشخصية ويتم
+                ذلك مجاناً.</li>
+              <li class="text-[#042E30] my-5 font-medium">من المُحتمل أن ننقل معلوماتك إلى شركات أخرى في مجموعتنا أو إلى
+                وكلائنا والمتعاقدين معنا لمساعدتنا في المعاملات المتعلقة وعلى سبيل المثال إلى طرف ثالث لمعاونتنا في
+                تسليم المنتجات إليك واستلام الدفعات منك واستخدامها لأغراض الإحصاءات وأبحاث التسويق أو لمساعدة فريق خدمة
+                العملاء أو لإرسال العروض الخاصة بنا ، وقد نحتاج لتبادل المعلومات مع طرف ثالث بهدف الحماية من الاحتيال
+                والحد من مخاطر الائتمان.</li>
+              <li class="text-[#042E30] my-5 font-medium">إن كل مشاركات العملاء على الموقع و ما تقدمه لنا بما في ذلك ــ
+                على سبيل المثال وليس الحصرــ الأسئلة والانتقادات والتعليقات والاقتراحات مجتمعين في لفظ "المشاركات" تصبح
+                ملكنا الوحيد والحصري ، ولا تعود بأي حال من الأحوال ملكاً للعميل ، وفضلاً عن الحقوق التي تنطبق على أي نوع
+                من المشاركات ، وبمجرد أنك تشاركنا بتعليقاتك أو انتقاداتك على الموقع ، فإنك تمنحنا أيضاً حق استخدام الاسم
+                الذي تعرضه والمرتبط مباشرةً بهذا النقد أو التعليق أو أي محتوى آخر ، ولا يحق لك استخدام عنوان مُزيف
+                للبريد الالكتروني أو الإدعاء بأنك شخصٌ آخر أو محاولة تضليلنا أو أي طرف ثالث فيما يتعلَّق بأصالة وموثوقية
+                أي من هذه المشاركات ، كما يجوز لنا حذف أو إخفاء أي من هذه المشاركات غير أننا لسنا ملزمين بذلك.</li>
+              <li class="text-[#042E30] my-5 font-medium"> حالة وجود خطأ فى السعر على الموقع يحق لشركه هايبر وان تعديل
+                السعر أو ألغاء الطلب للعميل </li>
+              <li class="text-[#042E30] my-5 font-medium">في حالة خرق هذه القوانين سيتعامل الفريق القانوني بشركة فريش
+                ماركت مع العميل ويتم إلغاء تفعيل حسابه ومنعه من إجراء أي طلبات على الموقع الإلكتروني لشركة فريش ماركت.
+              </li>
+              <li class="text-[#042E30] my-5 font-medium">تُفسَّر هذه الشروط والأحكام وتُطبَّق بموجب القوانين السارية في
+                جمهورية مصر العربية وبموجب ذلك يوافق كل طرف على المثول أمام هيئات المحاكم القضائية في جمهورية مصر
+                العربية والتنازل عن أي اعتراضات تتعلق بالمكان.</li>
+              <li class="text-[#042E30] my-5 font-medium">بالإضافة إلى أي أحكام قانونية أو إجراءات الإنصاف القضائي يجوز
+                لنا فوراً ومن دون سابق إنذار لك تعديل أو حذف أي من هذه الشروط والأحكام السابقة أو نلغي أياً من حقوقك
+                الممنوحة أو جميعها بموجب الشروط والأحكام ، وفي أي حالة لإنهاء هذا التعاقد ، يتعين عليك التوقف فوراً عن
+                زيارة الموقع واستخدامه ، وفضلاً عن إصدار أحكام قانونية أو إجراءات منصفة قضائياً ، قد نُلغي فورًا جميع
+                الكلمات السرية أو غيرها من أساليب تعريف الحساب الممنوحة لك ، ونرفض أي زيارة أو استخدام لهذا الموقع كلياً
+                أو جزئياً ، ولن يؤثِر أي إبطال لهذا الاتفاق في جميع الحقوق والالتزامات بما في ذلك على سبيل المثال
+                التزامات الدفع الخاصة بالأطراف والصادرة قبل تاريخ إنهاء التعاقد ، ومن ثَمّ فأنت توافق على أن القائمين
+                على الموقع لن يتحملوا المسئولية عنك أو عن أي فرد آخر نتيجة لتعليق الخدمة أو إنهائها ، وإذا كُنتَ غير
+                راضٍي عن أي من الشروط أو الأحكام أو النظام أو السياسات أو المباديء التوجيهية أو الممارسات الخاصة بشركة
+                هايبر وان فيمكنك التوقف عن زيارة الموقع.</li>
+            </ol>
+          </div>
+        </div>
+        <div id="saved-product" class="content-section pt-8 hidden">
+          <h2 class="text-xl font-bold text-[#064C50] mb-4">الشروط و الأحكام</h2>
+          <div class="px-5">
+            <div class="my-5">
+              <h4 class="underline font-medium">تمهيد</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">يشكل استخدامك لخدمة الموقع موافقتك على اتباع هذه
+                الشروط والأحكام والالتزام بها. نحتفظ بالحق في تعديل الشروط والأحكام في أي وقت. تسري هذه التغييرات بمجرد
+                نشرها على الموقع. تقع على عاتقك مسؤولية قراءة هذه الشروط والأحكام جيدًا ، وعند استخدامك لهذا الموقع
+                الإلكتروني، يجب أن تشير إلى موافقتك على الالتزام بأحدث الشروط والأحكام. يرجى تزويدنا بمعلومات دقيقة فأي
+                معلومات غير دقيقة خرقًا لهذه الشروط والأحكام. من خلال تأكيد الشراء في نهاية عملية الدفع ، فإنك توافق على
+                قبول العناصر المطلوبة ودفع ثمنها.</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">شروط الاستخدام</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">يحق فقط للأشخاص الذين تزيد أعمارهم عن 14 عامًا
+                استخدام الموقع. إذا كان عمر المستخدم أقل من 14 عامًا ، فيمكن لوالديه أو الأوصياء القانونيين تسجيل
+                حساباتهم نيابة عنه. نحتفظ بالحق في إنهاء تسجيلك إذا اكتشفنا أن عمرك أقل من 14 عامًا. لا يمكن الوصول إلى
+                الموقع من قبل أولئك الذين تم تعليق أو إنهاء تسجيلهم من قبلنا لأي سبب من الأسباب. إذا كنت تقوم بالوصول
+                إلى هذا الموقع من خارج الدولة، يجب عليك الامتثال للقوانين المحلية في مصر. نحن مسؤولون عن توصيل المنتجات
+                داخل المنطقة المحددة في مصر وفقًا لسياسة التوصيل المعمول بها في ذلك الوقت. يجوز تعديل شروط وأحكام الموقع
+                الإلكتروني دون إخطار مسبق لك. يمكنك الوصول إلى أحدث إصدار من الشروط والأحكام في أي وقت على الموقع.</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">الإلغاء</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">من أجل راحتك ، لن نقوم بإلغاء أي طلب ، وستتم
+                محاسبتك بالكامل ما لم تقم بإلغاء الطلب بنفسك. يُلغى الطلب عند إضافة عنوان أو معلومات خاطئة. يحق لك إلغاء
+                أي طلب خاص بك في أي وقت ولأي سبب. يرجى التحقق من معلومات الطلب بدقة قبل المغادرة. إذا استلمنا إشعار
+                الإلغاء من جانبك على النحو اللازم ولم تتم معالجة / الموافقة على الطلب من قبلنا ، فسنقوم بإلغاء الطلب
+                وإعادة المبلغ بالكامل إلى بطاقة الائتمان / الخصم الخاصة بك. إذا كان هناك إخطار إلغاء من جانبكم تم تلقيه
+                من جانبنا على النحو اللازم ولم تكن الطلبية قد جهزت/ اعتمدت من جانبنا، فسوف نقوم نحن بإلغاء الطلبية ورد
+                كامل المبلغ إلى بطاقة الإئتمان/ بطاقة الخصم المباشر الخاصة بكم.</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">خصائص الأمان للموقع</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">قد تؤدي انتهاكات النظام أو أمن الشبكة إلى مسؤولية
+                مدنية أو جنائية. سنحقق في مثل هذه الانتهاكات ونقاضي المستخدمين المتورطين في مثل هذه الانتهاكات. أنت
+                توافق على عدم استخدام أي جهاز أو برنامج للتدخل أو محاولة التدخل في عمل هذا الموقع أو أي نشاط يتم إجراؤه
+                على هذا الموقع ، كما توافق على عدم استخدام أو محاولة استخدام أي محرك أو برنامج أو أداة أو وكيل أو جهاز
+                أو آلية أخرى (بما في ذلك على سبيل المثال لا الحصر المتصفحات أو العناكب أو الروبوتات أو الصور الرمزية أو
+                الوكلاء الأذكياء) للتنقل أو البحث في هذا الموقع بخلاف محرك البحث ووكلاء البحث المتاحين منا على هذا
+                الموقع. قد يتم تقييد الوصول إلى الموقع في بعض الأحيان للسماح بالإصلاح أو الصيانة أو اضافة خدمات جديدة.
+                يُحقق أي انتهاكات لأمن النظام أو الشبكة وملاحقة المستخدمين المتورطين في مثل هذه الانتهاكات. تشمل
+                انتهاكات أمن الموقع ما يلي: - الوصول إلى بيانات أو خادم أو حساب غير مصرح لك به - إرسال فيروس إلى الموقع
+                أو إرسال بريد عشوائي ، أو رسائل الكترونية مزعجة أو تعطله - إرسال رسائل بريد إلكتروني غير مرغوب فيها تحمل
+                اسم الشركة بما في ذلك العروض الترويجية و / أو الإعلان عن المنتجات أو الخدمات</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">عملية التسجيل</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">يجب أن يتم التسجيل عند النقر على الخروج ووضع الطلب.
+                يمكنك أيضًا التسجيل في أي وقت عن طريق إضافة معلوماتك بدقة للحصول على تجربة تسوق أكثر ملاءمة. ستتم حماية
+                المعلومات التي يقدمها المستخدم وفقًا لسياسة الخصوصية الخاصة بنا. وفقًا للشروط والأحكام، فإنك توافق على
+                أن تكون مسؤولاً عن جميع الأنشطة التي تحدث من خلال حسابك أو كلمة المرور الخاصة بك.</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">تسعير المنتجات</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">يجب أن يتم التسجيل عند النقر على الخروج ووضع الطلب.
+                يمكنك أيضًا التسجيل في أي وقت عن طريق إضافة معلوماتك بدقة للحصول على تجربة تسوق أكثر ملاءمة. ستتم حماية
+                المعلومات التي يقدمها المستخدم وفقًا لسياسة الخصوصية الخاصة بنا. وفقًا للشروط والأحكام، فإنك توافق على
+                أن تكون مسؤولاً عن جميع الأنشطة التي تحدث من خلال حسابك أو كلمة المرور الخاصة بك.</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">حدود الكمية</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">يقتصر المستخدم على طلب 10000 منتج فقط لكل طلب.</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">بيانات بطاقة الإئتمان/ بطاقة الخصم المباشر</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">تفاصيل بطاقة الائتمان/الخصم التي تقدمها سرية
+                تمامًا، ما لم تكن هناك عمليات تحقق من الاحتيال أو بموجب قانون أو لائحة أو أمر محكمة. تقع على عاتقك
+                مسؤولية دقة تفاصيل بطاقة الائتمان/الخصم الخاصة بك. تقع مسؤولية استخدام البطاقة بطريقة احتيالية على عاتقك
+                وستكون مسؤولية إثبات خلاف ذلك حصريًا عليك.</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">حقوق الملكية</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">نحتفظ نحن وموردونا والمرخصون لدينا بجميع حقوق
+                الملكية الفكرية في جميع النصوص والبرامج والمنتجات والعمليات والتكنولوجيا والمحتوى والمواد الأخرى التي
+                تظهر على هذا الموقع. لا يُمنح الوصول إلى هذا الموقع ولن يُعتبر أنه يمنح أي شخص أي ترخيص بموجب أي من حقوق
+                الملكية الفكرية الخاصة بنا أو لأي طرف ثالث. جميع الحقوق، بما في ذلك حقوق النشر، في هذا الموقع مملوكة أو
+                مرخصة لنا/للشركات التابعة لنا. يُحظر أي استخدام لهذا الموقع أو محتوياته ، بما في ذلك نسخه أو تحميله
+                كليًا أو جزئيًا واستخدامك الشخصي غير التجاري دون إذن منا.</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">الإنهاء</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">هذه الشروط والأحكام سارية المفعول ما لم يتم إنهاؤها
+                من قبلك أو من قبلنا. يمكنك إنهاء هذه الشروط والأحكام في أي وقت ، بشرط أن تتوقف عن أي استخدام آخر لهذا
+                الموقع. يجوز لنا إنهاء هذه الشروط والأحكام في أي وقت وقد نقوم بذلك على الفور دون سابق إنذار ، وبالتالي
+                نرفض وصولك إلى الموقع. سيكون هذا الإنهاء دون أي مسؤولية تجاهنا. يظل حقنا في أي تعليقات ساريًا بعد إنهاء
+                هذه الشروط والأحكام. أي إنهاء من هذا القبيل لهذه الشروط والأحكام لن يلغي التزامك بالدفع مقابل المنتج
+                الذي تم طلبه بالفعل من الموقع أو يؤثر على أي مسؤولية قد تنشأ بموجب هذه الشروط والأحكام.</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">تحديث المخزون</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">المخزون قابل للتعديل في أي وقت ولأي سبب.</p>
+            </div>
+            <div class="my-5">
+              <h4 class="underline font-medium">نظام التقسيط</h4>
+              <p class="mt-2 text-[14px] text-[#042E30] font-medium">الأقساط التي يقوم بها البائعون مسئولية البائعين
+                فقط. (اذكر أسماء البائعين وسياستهم)</p>
+            </div>
+          </div>
+        </div>
+        <div id="logout" class="content-section hidden">تسجيل الخروج</div>
+
+      </div>
+    </div>
+  </div>
+    <!-- start footer -->
+  <footer class="bg-[#064C50] py-12">
+    <div class="container mx-auto">
+      <div class="footer flex flex-col gap-8">
+        <!-- Top Section -->
+        <div
+          class="flex flex-col justify-center items-center lg:justify-between lg:items-start text-white border-b border-[#FFFFFF1A] pb-8 lg:flex-row">
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">خدمة العملاء</p>
+            <a href="" class="my-2">الأسئلة الشائعة</a>
+            <a href="" class="my-2">اتصل بنا</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">عن فريش ماركت</p>
+            <a href="" class="my-2">معلومات عنا</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">المزيد من فريش ماركت</p>
+            <a href="" class="my-2">الشروط والأحكام</a>
+            <a href="" class="my-2">سياسة الخصوصية</a>
+            <a href="" class="my-2">قدم لنا ملاحظاتك</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">تحميل تطبيق الجوال</p>
+            <a href="" class="my-2 flex justify-end items-center rounded-lg p-1 gap-2 border border-white md:w-[160px]">
+              <div class="apple text-end text-white">
+                <p class="font-medium">Download on the</p>
+                <p class="font-bold text-xl">App Store</p>
+              </div>
+              <img src="../../assets/images/footer/Vector 2.png" alt="">
+            </a>
+            <a href="" class="my-2 flex justify-end items-center rounded-lg p-1 gap-2 border border-white md:w-[160px]">
+              <div class="apple text-end text-white">
+                <p class="font-medium">GET IT ON</p>
+                <p class="font-bold text-xl ">Google Play</p>
+              </div>
+              <img src="../../assets/images/footer/Group.png" alt="">
+            </a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">تابعونا على مواقع التواصل الاجتماعي</p>
+            <div class="social flex flex-row justify-between items-center gap-2">
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/twitter logo.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector (1).png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector 4.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector 3.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="flex justify-between items-center text-white text-sm">
+          <p>© جميع الحقوق محفوظة 2024 | freshmarket</p>
+
+          <div class="flex items-center gap-4">
+            <p>يمكنك الدفع باستخدام</p>
+            <img src="../../assets/images/footer/Frame 41125881.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
+    <script>
+      // Add mobile menu toggle functionality
+      $('#mobileMenuToggle').click(function () {
+        $('#sideMenu').slideToggle();
+      });
+
+      // Handle menu visibility on screen resize
+      $(window).resize(function () {
+        if ($(window).width() >= 1024) {
+          $('#sideMenu').show();
+        }
+      });
+
+   
+    </script>
+</body>
+
+</html>

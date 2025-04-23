@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASQ Est</title>
+  <!-- css links files -->
+  <link href="../../output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/all.css" />
+  <link rel="stylesheet" href="../../assets/css/animate.css" />
+  <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+  <link rel="stylesheet" href="../../assets/css/hamburgers.min.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body class="bg-[#F6FAF6]">
+  <!-- loader -->
+  <div
+    class="loader fixed flex justify-center items-center z-50 bg-[#064C50] transition-all top-0 bottom-0 left-0 right-0">
+    <div class="flex justify-center items-center overflow-hidden w-fit">
+      <img src="../../assets/images/Frame 41125890.png" class="animationLoaderImage" alt="">
+      <div class="spinner-5"></div>
+    </div>
+  </div>
+
+  <div class="container mx-auto">
+     <header class="mt-3 mb-5 bg-[#064C50] flex flex-row-reverse justify-between items-center z-40 py-3 px-4 rounded-lg">
+      <div class="images flex justify-start items-center gap-3">
+        <a href="shoppingCart.html"
+          class="cartHeader bg-[#fff] relative flex justify-center items-center w-[48px] h-[48px] object-cover rounded-full">
+          <img src="../../assets/images/Icon.png" class="w-5 h-5" alt="" />
+          <span
+            class="w-4 h-4 absolute top-2 right-2 text-base rounded-full text-white flex justify-center items-center bg-[#EB5E5A]">2</span>
+        </a>
+        <a href="" class="personalPageLink">
+          <img src="../../assets/images/Rectangle 44.png"
+            class="w-[48px] h-[48px] border border-dashed border-[#AD9D44] rounded-full p-0.5" alt="" />
+        </a>
+      </div>
+      <div class="flex paraHeader">
+        <img src="../../assets/images/Group 72.png" alt="" />
+        <p class="text-[#fff] font-bold">
+          اطلب الآن واستلم طلبك خلال 15
+          <span class="text-[#AD9D44]">دقيقة فقط!</span>
+        </p>
+      </div>
+      <form action="" class="relative">
+        <input type="text" name="" placeholder="ابحث عن البقالة أو الخضروات أو اللحوم"
+          class="searchInput bg-white w-[350px] py-3 pr-13 pl-5 rounded-full" id="" />
+        <button class="text-emerald-700 absolute right-6 top-3">
+          <img src="../../assets/images/Icon (1).svg" class="w-5 h-5" alt="" />
+        </button>
+        <div class="searchPopup hidden absolute top-15 px-5 py-4 bg-white shadow-md rounded-lg w-[690px]">
+          <h3 class="font-bold text-xl text-[#064C50] mb-3">عمليات البحث الموصى بها</h3>
+          <div class="muasaa">
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+          </div>
+          <h3 class="font-bold text-xl text-[#064C50] my-3">أشهر عمليات البحث</h3>
+          <div class="famous flex flex-wrap justify-between items-center gap-2">
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </form>
+      <a href="index.html" class="logo">
+        <img src="../../assets/images/Frame 41125890.png" class="imgLogo" alt="" />
+        <img src="../../assets/images/Vector.png" class="responsiveLogo hidden" alt="">
+      </a>
+      <div class="hamburger hamburger--slider">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </header>
+    <!-- menu -->
+    <div
+      class="menu transition translate-x-full fixed top-0 bottom-0 z-40 right-0 bg-[#064C50] w-[384px] flex flex-col">
+      <div class="menuLogo my-5 mr-4">
+        <a href=""><img src="../../assets/images/Frame 41125890.png" alt=""></a>
+      </div>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36] profileLink"><img
+          src="../../assets/images/menu/profile-circle.png" alt=""> معلومات الحساب</a>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36] myOrderLink"><img
+          src="../../assets/images/menu/task-square.png" alt=""> طلباتي</a>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36] saveProductLink"><img
+          src="../../assets/images/menu/heart.png" alt=""> المنتجات المحفوظة</a>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36] myWalletLink"><img
+          src="../../assets/images/menu/empty-wallet.png" alt=""> محفظتي</a>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36] addreesLink"><img
+          src="../../assets/images/menu/location.png" alt=""> العنوان</a>
+      <form action="" method="">
+        <button
+          class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+            src="../../assets/images/menu/logout.png" alt=""> تسجيل الخروج</button>
+      </form>
+    </div>
+    <!-- panner -->
+    <div
+      class="panner skeletonloader flex flex-col justify-center gap-3 sm:justify-around items-center rounded-lg px-4 sm:flex-row">
+      <div data-aos="fade-left" class="pannerTitle ">
+        <h1 class="font-bold  text-white text-2xl sm:text-3xl">
+          احصل على خصم خاص يصل إلى 20%
+        </h1>
+        <p class="text-white  text-lg md:text-xl">استمتع بشراء الخضروات بأسعار مخفضة</p>
+      </div>
+      <img src="../../assets/images/5a7dbfbfe0b0b64d433bafc9b9e5bbea-removebg-preview.png" data-aos="fade-down"
+        class="fruit w-[365px] -translate-y-1.5 wow fadeInDown" alt="" />
+      <button data-aos="fade-right" class="bg-[#FFFFFF] text-[#064C50] font-bold text-xl py-[10px] px-5 rounded-md">
+        تسوق الأن
+      </button>
+    </div>
+    <!-- تسوق حسب القسم -->
+    <div class="w-full my-6">
+      <div class="flex items-center justify-between mb-4 pl-10">
+        <h2 class="text-lg font-bold text-[#064C50]">تسوق حسب القسم</h2>
+        <div class="flex gap-2">
+          <button
+            class="cursor-pointer prev-slide w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600">
+            ❮
+          </button>
+          <button
+            class="cursor-pointer next-slide w-8 h-8 flex items-center justify-center rounded-full bg-[#064C50] text-white">
+            ❯
+          </button>
+        </div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- عنصر السلايدر -->
+          <div data-aos="fade-up" data-aos-delay="100" class="swiper-slide">
+            <a href=""
+              class="cursor-pointer w-full sm:w-[180px] h-[180px] bg-white rounded-2xl flex flex-col items-center justify-center p-4 group relative overflow-hidden group transition duration-200 hover:bg-[#064C50]">
+              <img src="../../assets/images/electronics 1.png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-100 group-hover:opacity-0 absolute"
+                id="defaultImage" />
+
+              <img src="../../assets/images/Mask group (4).png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-0 group-hover:opacity-100" id="hoverImage" />
+
+              <p class="text-sm text-gray-800 font-semibold text-center transition duration-200 group-hover:text-white">
+                الإلكترونيات
+              </p>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200" class="swiper-slide">
+            <a href=""
+              class="cursor-pointer w-full sm:w-[180px] h-[180px] bg-white rounded-2xl flex flex-col items-center justify-center p-4 group relative overflow-hidden transition duration-200 hover:bg-[#064C50]">
+              <img src="../../assets/images/mortar 1.png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-100 group-hover:opacity-0 absolute"
+                id="defaultImage" />
+
+              <img src="../../assets/images/Mask group (3).png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-0 group-hover:opacity-100" id="hoverImage" />
+
+              <p class="text-sm text-gray-800 font-semibold text-center transition duration-200 group-hover:text-white">
+                العطارة والأعشاب
+              </p>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="300" class="swiper-slide">
+            <a href=""
+              class="cursor-pointer w-full sm:w-[180px] h-[180px] bg-white rounded-2xl flex flex-col items-center justify-center p-4 group relative overflow-hidden transition duration-200 hover:bg-[#064C50]">
+              <img src="../../assets/images/Mask group.png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-100 group-hover:opacity-0 absolute"
+                id="defaultImage" />
+
+              <img src="../../assets/images/fruit-2 1.png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-0 group-hover:opacity-100" id="hoverImage" />
+
+              <p class="text-sm text-gray-800 font-semibold text-center transition duration-200 group-hover:text-white">
+                الأغذية الطازجة
+              </p>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="400" class="swiper-slide">
+            <a href=""
+              class="cursor-pointer w-full sm:w-[180px] h-[180px] bg-white rounded-2xl flex flex-col items-center justify-center p-4 group relative overflow-hidden transition duration-200 hover:bg-[#064C50]">
+              <img src="../../assets/images/water-bottle-2 1.png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-100 group-hover:opacity-0 absolute"
+                id="defaultImage" />
+
+              <img src="../../assets/images/mashroop.png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-0 group-hover:opacity-100" id="hoverImage" />
+
+              <p class="text-sm text-gray-800 font-semibold text-center transition duration-200 group-hover:text-white">
+                المشروبات
+              </p>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="500" class="swiper-slide">
+            <a href=""
+              class="cursor-pointer w-full sm:w-[180px] h-[180px] bg-white rounded-2xl flex flex-col items-center justify-center p-4 group relative overflow-hidden transition duration-200 hover:bg-[#064C50]">
+              <img src="../../assets/images/pet-supplies-3 1.png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-100 group-hover:opacity-0 absolute"
+                id="defaultImage" />
+
+              <img src="../../assets/images/Mask group (1).png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-0 group-hover:opacity-100" id="hoverImage" />
+
+              <p class="text-sm text-gray-800 font-semibold text-center transition duration-200 group-hover:text-white">
+                طعام ومستلزمات الحيوانات الأليفة
+              </p>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="600" class="swiper-slide">
+            <a href=""
+              class="cursor-pointer w-full sm:w-[180px] h-[180px] bg-white rounded-2xl flex flex-col items-center justify-center p-4 group relative overflow-hidden transition duration-200 hover:bg-[#064C50]">
+              <img src="../../assets/images/cleaning-supplies 1.png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-100 group-hover:opacity-0 absolute"
+                id="defaultImage" />
+
+              <img src="../../assets/images/Mask group (2).png" alt=""
+                class="mb-6 transition-opacity duration-500 opacity-0 group-hover:opacity-100" id="hoverImage" />
+
+              <p class="text-sm text-gray-800 font-semibold text-center transition duration-200 group-hover:text-white">
+                مستلزمات النظافة
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- الاكثر طلبا -->
+    <div class="my-6">
+      <h2 class="text-lg font-bold text-[#064C50]">الأكثر طلبًا</h2>
+      <div class="flex flex-wrap justify-between items-center gap-x-2 gap-y-8 mt-5">
+        <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+              class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+              class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+              class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+              class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+              class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+              class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+              class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+              class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+              class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-delay="1000" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+              class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ماركات مميزة -->
+    <div class="my-6">
+      <h2 class="text-lg font-bold text-[#064C50]">ماركات مميزة</h2>
+      <div class="flex flex-wrap justify-between items-center gap-x-2 gap-y-2 mt-5">
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/1- 1.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/1.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/2.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/3.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/4.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/6.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/7.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/1200px-Heinz.svg 1.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/Almarai_Corporate_Logo.svg 1.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/unnamed-6 1.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/chipsy-egypt-logo-E3794542F9-seeklogo.com 1.png" alt="">
+        </a>
+        <a href="" class="maraka w-[180px] h-24 bg-[#E6EDEE] rounded-lg flex justify-center items-center">
+          <img src="../../assets/images/marka/edita-ar 2.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <!-- ads -->
+    <div class="my-6 ads">
+      <div class="flex justify-between items-center overflow-hidden gap-4 my-5">
+        <img src="../../assets/images/Rectangle 21.png" class="object-cover w- rounded-2xl h-[525px]" alt="">
+        <img src="../../assets/images/resized_image 2.png" class="object-cover w-10/12 h-[525px] rounded-xl" alt="">
+      </div>
+      <div class="flex justify-between items-center gap-4 my-5">
+        <img src="../../assets/images/WhatsApp Image 2025-02-25 at 3.49.05 PM-2-2 1.png" class="object-cover w-1/2" alt="">
+        <img src="../../assets/images/WhatsApp Image 2025-02-25 at 3.43.25 PM-3 1.png" class="object-cover w-1/2" alt="">
+      </div>
+    </div>
+    
+
+    <!-- أفضل العروض لك اليوم! -->
+    <div class="my-6">
+      <h2 class="text-lg font-bold text-[#064C50]">أفضل العروض لك اليوم!</h2>
+      <div class="flex justify-start items-center gap-2 my-5 overflow-x-auto whitespace-nowrap">
+        <button
+          class="tab bg-white p-2 transition hover:text-white hover:bg-[#042E30] border border-[#C9C9C9] cursor-pointer rounded-lg focus:outline-none tab-active"
+          data-tab="tab1">كل المنتجات</button>
+        <button
+          class="tab bg-white p-2 transition hover:text-white hover:bg-[#042E30] border border-[#C9C9C9] cursor-pointer rounded-lg focus:outline-none"
+          data-tab="tab2">الاطعمة المجمدة</button>
+        <button
+          class="tab bg-white p-2 transition hover:text-white hover:bg-[#042E30] border border-[#C9C9C9] cursor-pointer rounded-lg focus:outline-none"
+          data-tab="tab3">الخضراوات</button>
+        <button
+          class="tab bg-white p-2 transition hover:text-white hover:bg-[#042E30] border border-[#C9C9C9] cursor-pointer rounded-lg focus:outline-none"
+          data-tab="tab4">الالبان والحليب</button>
+        <button
+          class="tab bg-white p-2 transition hover:text-white hover:bg-[#042E30] border border-[#C9C9C9] cursor-pointer rounded-lg focus:outline-none"
+          data-tab="tab5">الوجبات الخفيفة</button>
+        <button
+          class="tab bg-white p-2 transition hover:text-white hover:bg-[#042E30] border border-[#C9C9C9] cursor-pointer rounded-lg focus:outline-none"
+          data-tab="tab6">الدجاج</button>
+        <button
+          class="tab bg-white p-2 transition hover:text-white hover:bg-[#042E30] border border-[#C9C9C9] cursor-pointer rounded-lg focus:outline-none"
+          data-tab="tab7">اللحوم</button>
+        <button
+          class="tab bg-white p-2 transition hover:text-white hover:bg-[#042E30] border border-[#C9C9C9] cursor-pointer rounded-lg focus:outline-none"
+          data-tab="tab8">الفواكه</button>
+        <button
+          class="tab bg-white p-2 transition hover:text-white hover:bg-[#042E30] border border-[#C9C9C9] cursor-pointer rounded-lg focus:outline-none"
+          data-tab="tab9">الشوكولاته</button>
+      </div>
+
+      <div class="tabsContaent">
+        <div class="tab-content" id="tab1">
+          <div class="flex justify-start items-center gap-3">
+            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="tab-content hidden" id="tab2">
+          <div class="flex justify-start items-center gap-3">
+            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="tab-content hidden" id="tab3">
+          <div class="flex justify-start items-center gap-3">
+            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="tab-content hidden" id="tab4">
+          <div class="flex justify-start items-center gap-3">
+            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="tab-content hidden" id="tab5">
+          <div class="flex justify-start items-center gap-3">
+            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="tab-content hidden" id="tab6">
+          <div class="flex justify-start items-center gap-3">
+            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="tab-content hidden" id="tab7">
+          <div class="flex justify-start items-center gap-3">
+            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="tab-content hidden" id="tab8">
+          <div class="flex justify-start items-center gap-3">
+            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="tab-content hidden" id="tab9">
+          <div class="flex justify-start items-center gap-3">
+          <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic"
+            class="product-card group w-[222px] bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col items-center relative hover:shadow-xl transition-shadow duration-300">
+            <a href="">
+              <img src="../../assets/images/543989_main.jpg 1.png" alt="prod"
+                class="w-52 h-52 object-contain transition-transform duration-300 group-hover:scale-110" />
+              <div class="prodDetails text-center mb-5">
+                <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                  عسل أسود <br />
+                  (الرشيدي الميزان)
+                </p>
+                <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+                <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+              </div>
+            </a>
+            <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+              <button
+                class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300 hover:bg-gray-200 transition duration-300">
+                <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+              </button>
+  
+              <div class="counterContainer hidden flex items-center space-x-4">
+                <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+                <span class="counter text-lg font-semibold">1</span>
+                <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+          </div>
+    </div>
+    <!-- accordion data -->
+    <div class="my-6 flex flex-col justify-between items-center gap-2 md:flex-nowrap md:flex-row">
+      <img src="../../assets/images/Rectangle 44.png" class="imgSec w-full md:w-[486px]" alt="">
+      <div class="w-full md:w-[689px]">
+        <div class="accordion-item border-b border-[#D7D7D7]">
+          <button
+            class="accordion-title flex justify-between items-center text-start w-full p-4 text-xl text-[#064C50] font-bold hover:bg-gray-100 focus:outline-none">
+            هل يقدم فريش ماركت منتجات عضوية؟
+            <span class="rotate text-[#064C50] transition-transform duration-300">▶</span>
+          </button>
+          <div class="accordion-content hidden text-base font-bold text-[#042E30] p-4">
+            نعم، نوفر مجموعة واسعة من المنتجات الغذائية التي تناسب جميع الأذواق، بما في ذلك المواد الغذائية الأساسية
+            والمنتجات العضوية.
+          </div>
+        </div>
+        <div class="accordion-item border-b border-[#D7D7D7]">
+          <button
+            class="accordion-title flex justify-between items-center text-start w-full p-4 text-xl text-[#064C50] font-bold hover:bg-gray-100 focus:outline-none">
+            هل يمكنني طلب منتجات معينة؟
+            <span class="rotate text-[#064C50] transition-transform duration-300">▶</span>
+          </button>
+          <div class="accordion-content hidden text-base font-bold text-[#042E30] p-4">
+            نعم، يمكنك طلب منتجات معينة من خلال قسم الطلبات الخاصة، وسنبذل قصارى جهدنا لتلبية احتياجاتك.
+          </div>
+        </div>
+        <div class="accordion-item border-b border-[#D7D7D7]">
+          <button
+            class="accordion-title flex justify-between items-center text-start w-full p-4 text-xl text-[#064C50] font-bold hover:bg-gray-100 focus:outline-none">
+            كيف يمكنني تتبع طلبي؟
+            <span class="rotate text-[#064C50] transition-transform duration-300">▶</span>
+          </button>
+          <div class="accordion-content hidden text-base font-bold text-[#042E30] p-4">
+            يمكنك تتبع طلبك من خلال رقم التعقب الذي سيتم إرساله إليك بعد تأكيد الطلب عبر موقعنا أو التطبيق.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button
+            class="accordion-title flex justify-between items-center text-start w-full p-4 text-xl text-[#064C50] font-bold hover:bg-gray-100 focus:outline-none">
+            هل يوجد خصومات على المنتجات؟
+            <span class="rotate text-[#064C50] transition-transform duration-300">▶</span>
+          </button>
+          <div class="accordion-content hidden text-base font-bold text-[#042E30] p-4">
+            نعم، نقدم عروضًا وخصومات دورية على مجموعة واسعة من المنتجات، يرجى متابعة قسم العروض على موقعنا.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button
+            class="accordion-title flex justify-between items-center text-start w-full p-4 text-xl text-[#064C50] font-bold hover:bg-gray-100 focus:outline-none">
+            هل يوجد خصومات على المنتجات؟
+            <span class="rotate text-[#064C50] transition-transform duration-300">▶</span>
+          </button>
+          <div class="accordion-content hidden text-base font-bold text-[#042E30] p-4">
+            نعم، نقدم عروضًا وخصومات دورية على مجموعة واسعة من المنتجات، يرجى متابعة قسم العروض على موقعنا.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button
+            class="accordion-title flex justify-between items-center text-start w-full p-4 text-xl text-[#064C50] font-bold hover:bg-gray-100 focus:outline-none">
+            هل يوجد خصومات على المنتجات؟
+            <span class="rotate text-[#064C50] transition-transform duration-300">▶</span>
+          </button>
+          <div class="accordion-content hidden text-base font-bold text-[#042E30] p-4">
+            نعم، نقدم عروضًا وخصومات دورية على مجموعة واسعة من المنتجات، يرجى متابعة قسم العروض على موقعنا.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- رأي الناس فينا -->
+    <div class="my-6">
+      <h2 class="text-lg font-bold text-[#064C50]">رأي الناس فينا</h2>
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-8 mt-5">
+        <div class="bg-[#003B22] relative rounded-lg w-full h-[268px] flex justify-between items-center">
+          <div class="comment px-4 md:px-8 lg:pr-10">
+            <img src="../../assets/images/quotation-mark.png" alt="">
+            <div class="w-full md:w-[355px]">
+              <p class="text-white font-simibold text-base md:text-lg">فريش ماركت غيّر تجربة التسوق عندي تمامًا! المكان
+                منظم جدًا، والموظفين في قمة الذوق والتعاون. قسم الخضار والفواكه دايمًا طازج، وبلاقى كل اللي محتاجه
+                بأسعار ممتازة. بجد هو المكان المفضل لشراء مستلزمات البيت!</p>
+              <h2 class="text-white text-xl md:text-2xl font-bold mt-2">سهيل رحمن</h2>
+              <p class="text-white">عميل فريش ماركت</p>
+            </div>
+          </div>
+          <img src="../../assets/images/unsplash_7z8ooxti-zQ-removebg 1.png"
+            class="overviewPeopleImage absolute md:block hidden -top-[187px] -left-10" alt="">
+        </div>
+
+        <div class="bg-[#77050A] relative rounded-lg w-full h-[268px] flex justify-between items-center">
+          <div class="comment px-4 md:px-8 lg:pr-10 overflow-hidden">
+            <img src="../../assets/images/quotation-mark.png" alt="">
+            <div class="w-full md:w-[355px]">
+              <p class="text-white font-simibold text-base md:text-lg">فريش ماركت غيّر تجربة التسوق عندي تمامًا! المكان
+                منظم جدًا، والموظفين في قمة الذوق والتعاون. قسم الخضار والفواكه دايمًا طازج، وبلاقى كل اللي محتاجه
+                بأسعار ممتازة. بجد هو المكان المفضل لشراء مستلزمات البيت!</p>
+              <h2 class="text-white text-xl md:text-2xl font-bold mt-2">سهيل رحمن</h2>
+              <p class="text-white">عميل فريش ماركت</p>
+            </div>
+          </div>
+          <img src="../../assets/images/unsplash_l3wkjBIlujY-removebg 1.png"
+            class="overviewPeopleImage absolute md:block hidden bottom-0 left-0" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="elevator fixed bottom-5 right-5 w-15 h-15 text-white font-medium cursor-pointer rounded-full bg-[#064C50]">click</button>
+  <!-- start footer -->
+  <footer class="bg-[#064C50] py-12">
+    <div class="container mx-auto">
+      <div class="footer flex flex-col gap-8">
+        <!-- Top Section -->
+        <div
+          class="flex flex-col justify-center items-center lg:justify-between lg:items-start text-white border-b border-[#FFFFFF1A] pb-8 lg:flex-row">
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">خدمة العملاء</p>
+            <a href="" class="my-2">الأسئلة الشائعة</a>
+            <a href="" class="my-2">اتصل بنا</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">عن فريش ماركت</p>
+            <a href="" class="my-2">معلومات عنا</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">المزيد من فريش ماركت</p>
+            <a href="" class="my-2">الشروط والأحكام</a>
+            <a href="" class="my-2">سياسة الخصوصية</a>
+            <a href="" class="my-2">قدم لنا ملاحظاتك</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">تحميل تطبيق الجوال</p>
+            <a href="" class="my-2 flex justify-end items-center rounded-lg p-1 gap-2 border border-white md:w-[160px]">
+              <div class="apple text-end text-white">
+                <p class="font-medium">Download on the</p>
+                <p class="font-bold text-xl">App Store</p>
+              </div>
+              <img src="../../assets/images/footer/Vector 2.png" alt="">
+            </a>
+            <a href="" class="my-2 flex justify-end items-center rounded-lg p-1 gap-2 border border-white md:w-[160px]">
+              <div class="apple text-end text-white">
+                <p class="font-medium">GET IT ON</p>
+                <p class="font-bold text-xl ">Google Play</p>
+              </div>
+              <img src="../../assets/images/footer/Group.png" alt="">
+            </a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">تابعونا على مواقع التواصل الاجتماعي</p>
+            <div class="social flex flex-row justify-between items-center gap-2">
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/twitter logo.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector (1).png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector 4.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector 3.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="flex justify-between items-center text-white text-sm">
+          <p>© جميع الحقوق محفوظة 2024 | freshmarket</p>
+
+          <div class="flex items-center gap-4">
+            <p>يمكنك الدفع باستخدام</p>
+            <img src="../../assets/images/footer/Frame 41125881.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../../assets/js/script.js"></script>
+  <script src="../../assets/js/elevator.min.js"></script>
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/indexPage.js"></script>
+</body>
+
+</html>

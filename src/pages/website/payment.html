@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASQ Est</title>
+    <!-- css links files -->
+    <link href="../../output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/css/all.css" />
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+    <link rel="stylesheet" href="../../assets/css/hamburgers.min.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+  </head>
+
+  <body class="bg-[#F6FAF6]">
+    <!-- loader -->
+    <div class="loader fixed flex justify-center items-center z-50 bg-[#064C50] transition-all top-0 bottom-0 left-0 right-0">
+    <div class="flex justify-center items-center overflow-hidden w-fit">
+      <img src="../../assets/images/Frame 41125890.png" class="animationLoaderImage" alt="">
+      <div class="spinner-5"></div>
+    </div>
+  </div>
+    <div class="container mx-auto">
+       <header class="mt-3 mb-5 bg-[#064C50] flex flex-row-reverse justify-between items-center z-40 py-3 px-4 rounded-lg">
+      <div class="images flex justify-start items-center gap-3">
+        <a href="shoppingCart.html"
+          class="cartHeader bg-[#fff] relative flex justify-center items-center w-[48px] h-[48px] object-cover rounded-full">
+          <img src="../../assets/images/Icon.png" class="w-5 h-5" alt="" />
+          <span
+            class="w-4 h-4 absolute top-2 right-2 text-base rounded-full text-white flex justify-center items-center bg-[#EB5E5A]">2</span>
+        </a>
+        <a href="" class="personalPageLink">
+          <img src="../../assets/images/Rectangle 44.png"
+            class="w-[48px] h-[48px] border border-dashed border-[#AD9D44] rounded-full p-0.5" alt="" />
+        </a>
+      </div>
+      <div class="flex paraHeader">
+        <img src="../../assets/images/Group 72.png" alt="" />
+        <p class="text-[#fff] font-bold">
+          اطلب الآن واستلم طلبك خلال 15
+          <span class="text-[#AD9D44]">دقيقة فقط!</span>
+        </p>
+      </div>
+      <form action="" class="relative">
+        <input type="text" name="" placeholder="ابحث عن البقالة أو الخضروات أو اللحوم"
+          class="searchInput bg-white w-[350px] py-3 pr-13 pl-5 rounded-full" id="" />
+        <button class="text-emerald-700 absolute right-6 top-3">
+          <img src="../../assets/images/Icon (1).svg" class="w-5 h-5" alt="" />
+        </button>
+        <div class="searchPopup hidden absolute top-15 px-5 py-4 bg-white shadow-md rounded-lg w-[690px]">
+          <h3 class="font-bold text-xl text-[#064C50] mb-3">عمليات البحث الموصى بها</h3>
+          <div class="muasaa">
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+          </div>
+          <h3 class="font-bold text-xl text-[#064C50] my-3">أشهر عمليات البحث</h3>
+          <div class="famous flex flex-wrap justify-between items-center gap-2">
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </form>
+      <a href="index.html" class="logo">
+        <img src="../../assets/images/Frame 41125890.png" class="imgLogo" alt="" />
+        <img src="../../assets/images/Vector.png" class="responsiveLogo hidden" alt="">
+      </a>
+      <div class="hamburger hamburger--slider">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </header>
+      <!-- menu -->
+      <div
+        class="menu transition translate-x-full fixed top-0 bottom-0 z-40 right-0 bg-[#064C50] w-[384px] flex flex-col"
+      >
+        <div class="menuLogo my-5 mr-4">
+          <a href=""
+            ><img src="../../assets/images/Frame 41125890.png" alt=""
+          /></a>
+        </div>
+        <a
+          href=""
+          class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"
+          ><img src="../../assets/images/menu/profile-circle.png" alt="" />
+          معلومات الحساب</a
+        >
+        <a
+          href=""
+          class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"
+          ><img src="../../assets/images/menu/task-square.png" alt="" />
+          طلباتي</a
+        >
+        <a
+          href=""
+          class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"
+          ><img src="../../assets/images/menu/heart.png" alt="" /> المنتجات
+          المحفوظة</a
+        >
+        <a
+          href=""
+          class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"
+          ><img src="../../assets/images/menu/empty-wallet.png" alt="" />
+          محفظتي</a
+        >
+        <a
+          href=""
+          class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"
+          ><img src="../../assets/images/menu/location.png" alt="" /> العنوان</a
+        >
+        <a
+          href=""
+          class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"
+          ><img src="../../assets/images/menu/logout.png" alt="" /> تسجيل
+          الخروج</a
+        >
+      </div>
+    
+      <main class="my-8 flex flex-col justify-between items-start gap-6 md:flex-row">
+          <!-- الشحن -->
+           <div class="shipping w-full md:w-1/2">
+            <div class="shippingHeaders flex justify-start items-center gap-5">
+              <span class="step relative w-5 h-5 flex justify-center items-center rounded-full bg-[#064C50] text-white font-bold">1</span>
+              <h2 class="text-lg font-bold text-[#064C50]">الشحن</h2>
+            </div>
+            <form action="">
+            <div class="step1 border-r border-[#D0EAEB] -translate-x-2">
+                 <!-- sipping address -->
+             <div class="shippingAddress ps-8 my-4">
+              <h2 class="text-lg font-bold text-[#064C50]">اختيار عنوان الشحن</h2>
+              <p class="text-[#999999] font-medium">لديك أكثر من 1 عنوان محفوظ، من فضلك اختر العنوان الذي ترغب بالشحن إليه</p>
+              <div class="flex flex-wrap justify-between items-center gap-3 my-3">
+                <div class="radioInputChoose shadow-md shadow-[#0000000A] w-[260px] flex justify-start items-start gap-3 mt-2 bg-white rounded p-2">
+                  <input type="radio" name="address" id="address" value="Omar Mushtaha, 01552792343" class="w-6 h-6 translate-y-1">
+                  <label for="address" class="flex flex-col">
+                    <span class="font-bold text-lg text-[#435A5B]">Omar Mushtaha</span>
+                    <span class="font-medium text-base text-[#435A5B]">01552792343</span>
+                    <span class="font-medium text-base text-[#435A5B] w-[200px]">شارع مبنى 10 شقة 50، ابني بيتك، 6 أكتوبر، الجيزة</span>
+                  </label>
+                </div>
+                <div class="radioInputChoose shadow-md shadow-[#0000000A] w-[260px] flex justify-start items-start gap-3 mt-2 bg-white rounded p-2">
+                  <input type="radio" name="address" id="address1" value="Ahmed Bassam , 01552792343" class="w-6 h-6 translate-y-1">
+                  <label for="address1" class="flex flex-col">
+                    <span class="font-bold text-lg text-[#435A5B]">Ahmed Bassam</span>
+                    <span class="font-medium text-base text-[#435A5B]">01552792343</span>
+                    <span class="font-medium text-base text-[#435A5B] w-[200px]">شارع مبنى 10 شقة 50، ابني بيتك، 6 أكتوبر، الجيزة</span>
+                  </label>
+                </div>
+              </div>
+              <a href="" class="text-[#064C50] text-lg font-medium underline">إضافة عنوان جديد</a>
+            </div>
+            <!-- sipping way -->
+            <div class="shippingWay ps-8 my-4">
+              <h2 class="text-lg font-bold text-[#064C50]">اختر طريقة الشحن</h2>
+              <p class="text-[#999999] font-medium">قد يكلف التوصيل إلى المنزل رسوم شحن إضافية</p>
+              <div class="flex flex-wrap justify-between items-center gap-3 my-3">
+                <div class="radioInputChoose shadow-md shadow-[#0000000A] w-[260px] flex justify-start items-start gap-3 mt-2 bg-white rounded px-2 py-4">
+                  <input type="radio" name="way" value="الشحن المنزلي" id="way" class="w-6 h-6 translate-y-1">
+                  <label for="way" class="flex justify-start items-center gap-2">
+                    <img src="../../assets/images/truck 1.png" alt="">
+                    <span class="font-medium text-lg text-[#435A5B]">الشحن المنزلي</span>
+                  </label>
+                </div>
+                <div class="radioInputChoose shadow-md shadow-[#0000000A] w-[260px] flex justify-start items-start gap-3 mt-2 bg-white rounded px-2 py-4">
+                  <input type="radio" name="way" value="استلام من المتجر" id="way1" class="w-6 h-6 translate-y-1">
+                  <label for="way1" class="flex justify-start items-center gap-2">
+                    <img src="../../assets/images/store 1.png" alt="">
+                    <span class="font-medium text-lg text-[#435A5B]">استلام من المتجر</span>
+                  </label>
+                </div>
+              </div>
+              <p class="text-[#064C50] text-lg font-bold">توصيل البقالة</p>
+            </div>
+            <!-- sipping time -->
+            <div class="shippingTime ps-8 my-4">
+              <h2 class="text-lg font-bold text-[#064C50]">اختر وقت الشحن</h2>
+              <p class="text-[#999999] font-medium">قد يكلف التوصيل إلى المنزل رسوم شحن إضافية</p>
+              <div class="flex flex-wrap justify-between items-center gap-3 my-3">
+                <div class="radioInputChoose shadow-md shadow-[#0000000A] w-[260px] flex justify-start items-start gap-3 mt-2 bg-white rounded px-2 py-4">
+                  <input type="radio" name="time" value="في أقرب وقت" id="time" class="w-6 h-6 translate-y-1">
+                  <label for="time" class="flex justify-start items-center gap-2">
+                    <img src="../../assets/images/hour-glass 1.png" alt="">
+                    <span class="font-medium text-lg text-[#435A5B]">في أقرب وقت </span>
+                  </label>
+                </div>
+                <div class="radioInputChoose shadow-md shadow-[#0000000A] w-[260px] flex justify-start items-start gap-3 mt-2 bg-white rounded px-2 py-4">
+                  <input type="radio" name="time" value="حدد موعد" id="time1" class="w-6 h-6 translate-y-1">
+                  <label for="time1" class="flex justify-start items-center gap-2">
+                    <img src="../../assets/images/calendar 1.png" alt="">
+                    <span class="font-medium text-lg text-[#435A5B]">حدد موعد</span>
+                  </label>
+                </div>
+              </div>
+              <p class="text-[#064C50] text-lg font-bold">توصيل البقالة</p>
+            </div>
+            <!-- choose time -->
+            <div class="hidden chooseTime ps-8 my-4">
+              <p class="text-[#999999] font-medium">التاريخ</p>
+              <input type="date" name="shippingDate" class="border-2 border-[#064C50] w-[255px] rounded-md px-5 py-2 text-[#064C50] mt-3">
+              <div class="flex flex-wrap flex-wrap justify-between items-center gap-3 my-3">
+                <div class="radioInputChoose shadow-md shadow-[#0000000A] w-[255px] flex justify-start items-start gap-3 mt-2 bg-white rounded px-2 py-4">
+                  <input type="radio" name="ctime" id="ctime" value="08:00 صباحا - 1:00 مساء" class="w-6 h-6 translate-y-1">
+                  <label for="ctime" class="flex justify-start items-center gap-2">
+                    <span class="font-medium text-lg text-[#435A5B]">08:00 صباحا - 1:00 مساء</span>
+                  </label>
+                </div>
+                <div class="radioInputChoose shadow-md shadow-[#0000000A] w-[255px] flex justify-start items-start gap-3 mt-2 bg-white rounded px-2 py-4">
+                  <input type="radio" name="ctime" id="ctime1" value="012:00 صباحا - 11:00 مساء" class="w-6 h-6 translate-y-1">
+                  <label for="ctime1" class="flex justify-start items-center gap-2">
+                    <span class="font-medium text-lg text-[#435A5B]">012:00 صباحا - 11:00 مساء</span>
+                  </label>
+                </div>
+                <div class="radioInputChoose shadow-md shadow-[#0000000A] w-[255px] flex justify-start items-start gap-3 mt-2 bg-white rounded px-2 py-4">
+                  <input type="radio" name="ctime" id="ctime2" value="09:00 صباحا - 10:00 مساء" class="w-6 h-6 translate-y-1">
+                  <label for="ctime2" class="flex justify-start items-center gap-2">
+                    <span class="font-medium text-lg text-[#435A5B]">09:00 صباحا - 10:00 مساء</span>
+                  </label>
+                </div>
+                <div class="radioInputChoose shadow-md shadow-[#0000000A] w-[255px] flex justify-start items-start gap-3 mt-2 bg-white rounded px-2 py-4">
+                  <input type="radio" name="ctime" id="ctime3" value="01:00 صباحا - 12:00 مساء" class="w-6 h-6 translate-y-1">
+                  <label for="ctime3" class="flex justify-start items-center gap-2">
+                    <span class="font-medium text-lg text-[#435A5B]">01:00 صباحا - 12:00 مساء</span>
+                  </label>
+                </div>
+              </div>
+             <div class="addComment my-2">
+              <label for="comment" class="text-[#064C50] text-lg font-bold">اضف تعليق (اختياري)</label>
+              <textarea name="" id="comment" class="rounded-md border border-[#064C50] w-full h-[150px] px-4 py-2 mt-2"></textarea>
+             </div>
+            </div>
+            <button type="button" class="nextStepButton rounded w-[242px] ms-8 py-3 cursor-pointer bg-[#064C50] text-white">المتابعة للدفع</button>
+            </div>
+            <div class="hidden shahen flex justify-start items-center gap-5 mt-3">
+              <span class="step relative w-5 h-5 flex justify-center items-center rounded-full bg-[#064C50] text-white font-bold">1</span>
+              <h2 class="text-lg font-bold text-[#064C50]">الشحن</h2>
+            </div>
+            <div class="hidden step1Overview border-r border-[#D0EAEB] -translate-x-2">
+              <div class="shippingAddress ps-8 my-4">
+                <div class="flex justify-between items-center gap-3 my-3">
+                  <div class="w-[260px] mt-2 rounded p-2">
+                    <h2 class="text-[#435A5B] mb-2 font-bold text-lg">تفاصيل الشحن</h2>
+                    <div class="flex flex-col">
+                      <span class="font-medium text-base text-[#435A5B] shippingDetails">Omar Mushtaha</span>
+                      <span class="font-medium text-base text-[#435A5B] shippingDetails2">01552792343</span>
+                    </div>
+                  </div>
+                  <div class="w-[260px] mt-2 rounded p-2">
+                    <h2 class="text-[#435A5B] mb-2 font-bold text-lg">طريقة الشحن</h2>
+                    <div class="flex flex-col">
+                      <span class="font-medium text-base text-[#435A5B] day">متوقع وصوله الأربعاء، 5 مارس، 2025</span>
+                      <span class="font-medium text-base text-[#435A5B] time_">الوقت 10:00 مساء - 11:59 مساء</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-start items-center gap-5 mt-3">
+              <span class="step relative w-5 h-5 flex justify-center items-center rounded-full bg-[#064C50] text-white font-bold">2</span>
+              <h2 class="text-lg font-bold text-[#064C50]">الدفع</h2>
+            </div>
+            <div class="hidden step2">
+              <div class="shippingWay ps-8 my-4">
+                <h2 class="text-lg font-bold text-[#064C50]">اختر طريقة الشحن</h2>
+                <p class="text-[#999999] font-medium">قد يكلف التوصيل إلى المنزل رسوم شحن إضافية</p>
+                <div class="my-3">
+                  <div class="radioInputChoose w-full shadow-md shadow-[#0000000A] flex justify-start items-start gap-3 mt-4 bg-white rounded px-2 py-4">
+                    <input type="radio" name="pay" id="pay" class="w-6 h-6 translate-y-1">
+                    <label for="pay" class="flex justify-start items-center gap-2">
+                      <img src="../../assets/images/cash-payment 1.png" alt="">
+                      <span class="font-medium text-lg text-[#435A5B]">الدفع عند الاستلام</span>
+                    </label>
+                  </div>
+                  <div class="radioInputChoose w-full shadow-md shadow-[#0000000A] flex justify-start items-start gap-3 mt-4 bg-white rounded px-2 py-4">
+                    <input type="radio" name="pay" id="pay1" class="w-6 h-6 translate-y-1">
+                    <label for="pay1" class="flex justify-start items-center gap-2">
+                      <img src="../../assets/images/credit-card 1.png" alt="">
+                      <span class="font-medium text-lg text-[#435A5B]">بطاقة الائتمان</span>
+                    </label>
+                  </div>
+                  <div class="radioInputChoose w-full shadow-md shadow-[#0000000A] flex justify-start items-start gap-3 mt-4 bg-white rounded px-2 py-4">
+                    <input type="radio" name="pay" id="pay2" class="w-6 h-6 translate-y-1">
+                    <label for="pay2" class="flex justify-start items-center gap-2">
+                      <img src="../../assets/images/wallet 1.png" alt="">
+                      <span class="font-medium text-lg text-[#435A5B]">المحفظة الكترونية</span>
+                    </label>
+                  </div>
+                  <div class="radioInputChoose w-full shadow-md shadow-[#0000000A] flex justify-start items-start gap-3 mt-4 bg-white rounded px-2 py-4">
+                    <input type="radio" name="pay" id="pay3" class="w-6 h-6 translate-y-1">
+                    <label for="pay3" class="flex justify-start items-center gap-2">
+                      <img src="../../assets/images/point-of-sale 1.png" alt="">
+                      <span class="font-medium text-lg text-[#435A5B]">البطاقة عند الاستلام</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-end items-center gap-2">
+                <span class="h-[1px] w-56 bg-[#CCCCCC]"></span>
+                <p class="taqseet relative font-medium text-[#CCCCCC] text-center w-20">أو الدفع بالتقسيط</p>
+                <span class="h-[1px] w-56 bg-[#CCCCCC]"></span>
+              </div>
+              <div class="bg-[#EAF5F6] py-3 px-2 rounded-md ms-8 my-4">
+                <p class="text-[#064C50] font-medium text-[15px]">خطط التقسيط ببطاقة الائتمان متاحة للطلبات التي تحتوي على منتجات إلكترونية فقط</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 ms-8 my-5">
+                <input type="checkbox" name="condition" id="cond" class="w-5 h-5">
+                <label for="cond" class="text-[#666666] font-medium">اوافق على <span class="text-[#064C50]">الشروط</span> و <span class="text-[#064C50]">الاحكام</span> </label>
+              </div>
+              <a href="paymentDetails.html" class="flex justify-center items-center rounded w-[242px] ms-8 py-3 cursor-pointer bg-[#064C50] text-white">دفع وتأكيد الطلب</a>
+            </div>
+            </form>
+           </div>
+           <div class="order order-summary flex justify-end w-full md:w-1/2">
+            <div class="bg-white p-5 rounded-xl shadow-md w-full md:w-[484px]">
+            <div class="flex justify-between items-center w-full">
+              <div class="flex justify-start items-center gap-2">
+                 <h2 class="text-lg font-semibold text-gray-800">ملخص الطلب</h2>
+                 <p class="text-sm text-gray-500 mt-1">2 منتجات</p>
+              </div>
+              <button class="cursor-pointer"><img src="../../assets/images/edit-contained.png" alt=""></button>
+            </div>
+             <div class="overflow-y-auto h-[144px]">
+              <div class="flex justify-between items-center border-b border-[#EDEDED] py-3 order-item">
+                <div class="flex">
+                  <img src="../../assets/images/543989_main.jpg 1.png" class="w-14" alt="">
+                  <div>
+                    <p class="font-bold text-[#064C50]">مشروب بارد (فانتا)</p>
+                    <p class="text-sm text-gray-500">الكمية: 1</p>
+                </div>
+                </div>
+                <p class="text-[#064C50] font-bold">30 م ﷼</p>
+            </div>
+            <div class="flex justify-between items-center py-3 order-item">
+                <div class="flex">
+                  <img src="../../assets/images/543989_main.jpg 1.png" class="w-14" alt="">
+                  <div>
+                    <p class="font-bold text-[#064C50]">مشروب بارد (فانتا)</p>
+                    <p class="text-sm text-gray-500">الكمية: 1</p>
+                </div>
+                </div>
+                <p class="text-[#064C50] font-bold">30 م ﷼</p>
+            </div>
+             </div>
+              <!-- المجموع -->
+              <div class="mt-4 space-y-2">
+                  <div class="flex justify-between text-gray-700">
+                      <p class="text-lg font-medium">الإجمالي الفرعي</p>
+                      <p class="text-xl font-medium">180.62 م ﷼</p>
+                  </div>
+                  <div class="flex justify-between text-gray-700">
+                      <p class="text-lg font-medium">ضريبة القيمة المضافة</p>
+                      <p class="text-xl font-medium">25.28 م ﷼</p>
+                  </div>
+                  <div class="flex justify-between text-gray-700">
+                      <p class="text-lg font-medium">تكاليف الشحن</p>
+                      <p class="text-xl font-medium">مجاني</p>
+                  </div>
+                  <div class="flex justify-between text-gray-700 font-semibold border-t border-[#EDEDED] pt-2">
+                      <p class="text-base font-medium">السعر الإجمالي قبل الخصم</p>
+                      <p class="text-lg font-medium">102.9 م ﷼</p>
+                  </div>
+              </div>
+              
+              <!-- المجموع النهائي -->
+              <div class="flex justify-between items-center mt-4 text-lg font-semibold text-[#064C50]">
+                  <p>المجموع</p>
+                  <p>20.9 م ﷼</p>
+              </div>
+          </div>
+          </div>
+      </main>
+      <!-- end container -->
+    </div>
+    <!-- start footer -->
+     <footer class="bg-[#064C50] py-12">
+    <div class="container mx-auto">
+      <div class="footer flex flex-col gap-8">
+        <!-- Top Section -->
+        <div
+          class="flex flex-col justify-center items-center lg:justify-between lg:items-start text-white border-b border-[#FFFFFF1A] pb-8 lg:flex-row">
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">خدمة العملاء</p>
+            <a href="" class="my-2">الأسئلة الشائعة</a>
+            <a href="" class="my-2">اتصل بنا</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">عن فريش ماركت</p>
+            <a href="" class="my-2">معلومات عنا</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">المزيد من فريش ماركت</p>
+            <a href="" class="my-2">الشروط والأحكام</a>
+            <a href="" class="my-2">سياسة الخصوصية</a>
+            <a href="" class="my-2">قدم لنا ملاحظاتك</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">تحميل تطبيق الجوال</p>
+            <a href="" class="my-2 flex justify-end items-center rounded-lg p-1 gap-2 border border-white md:w-[160px]">
+              <div class="apple text-end text-white">
+                <p class="font-medium">Download on the</p>
+                <p class="font-bold text-xl">App Store</p>
+              </div>
+              <img src="../../assets/images/footer/Vector 2.png" alt="">
+            </a>
+            <a href="" class="my-2 flex justify-end items-center rounded-lg p-1 gap-2 border border-white md:w-[160px]">
+              <div class="apple text-end text-white">
+                <p class="font-medium">GET IT ON</p>
+                <p class="font-bold text-xl ">Google Play</p>
+              </div>
+              <img src="../../assets/images/footer/Group.png" alt="">
+            </a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">تابعونا على مواقع التواصل الاجتماعي</p>
+            <div class="social flex flex-row justify-between items-center gap-2">
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/twitter logo.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector (1).png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector 4.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector 3.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="flex justify-between items-center text-white text-sm">
+          <p>© جميع الحقوق محفوظة 2024 | freshmarket</p>
+
+          <div class="flex items-center gap-4">
+            <p>يمكنك الدفع باستخدام</p>
+            <img src="../../assets/images/footer/Frame 41125881.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../../assets/js/pay.js"></script>
+  </body>
+</html>

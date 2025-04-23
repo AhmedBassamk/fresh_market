@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASQ Est</title>
+  <!-- css links files -->
+  <link href="../../output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/all.css" />
+  <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+  <link rel="stylesheet" href="../../assets/css/hamburgers.min.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body class="bg-[#fff]">
+  <!-- loader -->
+  <div class="loader fixed flex justify-center items-center z-50 bg-[#064C50] transition-all top-0 bottom-0 left-0 right-0">
+    <div class="flex justify-center items-center overflow-hidden w-fit">
+      <img src="../../assets/images/Frame 41125890.png" class="animationLoaderImage" alt="">
+      <div class="spinner-5"></div>
+    </div>
+  </div>
+  <div class="container mx-auto">
+    <header class="mt-3 mb-5 bg-[#064C50] flex flex-row-reverse justify-between items-center z-40 py-3 px-4 rounded-lg">
+      <div class="images flex justify-start items-center gap-3">
+        <a href="shoppingCart.html"
+          class="cartHeader bg-[#fff] relative flex justify-center items-center w-[48px] h-[48px] object-cover rounded-full">
+          <img src="../../assets/images/Icon.png" class="w-5 h-5" alt="" />
+          <span
+            class="w-4 h-4 absolute top-2 right-2 text-base rounded-full text-white flex justify-center items-center bg-[#EB5E5A]">2</span>
+        </a>
+        <a href="" class="personalPageLink">
+          <img src="../../assets/images/Rectangle 44.png"
+            class="w-[48px] h-[48px] border border-dashed border-[#AD9D44] rounded-full p-0.5" alt="" />
+        </a>
+      </div>
+      <div class="flex paraHeader">
+        <img src="../../assets/images/Group 72.png" alt="" />
+        <p class="text-[#fff] font-bold">
+          اطلب الآن واستلم طلبك خلال 15
+          <span class="text-[#AD9D44]">دقيقة فقط!</span>
+        </p>
+      </div>
+      <form action="" class="relative">
+        <input type="text" name="" placeholder="ابحث عن البقالة أو الخضروات أو اللحوم"
+          class="searchInput bg-white w-[350px] py-3 pr-13 pl-5 rounded-full" id="" />
+        <button class="text-emerald-700 absolute right-6 top-3">
+          <img src="../../assets/images/Icon (1).svg" class="w-5 h-5" alt="" />
+        </button>
+        <div class="searchPopup hidden absolute top-15 px-5 py-4 bg-white shadow-md rounded-lg w-[690px]">
+          <h3 class="font-bold text-xl text-[#064C50] mb-3">عمليات البحث الموصى بها</h3>
+          <div class="muasaa">
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+          </div>
+          <h3 class="font-bold text-xl text-[#064C50] my-3">أشهر عمليات البحث</h3>
+          <div class="famous flex flex-wrap justify-between items-center gap-2">
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </form>
+      <a href="index.html" class="logo">
+        <img src="../../assets/images/Frame 41125890.png" class="imgLogo" alt="" />
+        <img src="../../assets/images/Vector.png" class="responsiveLogo hidden" alt="">
+      </a>
+      <div class="hamburger hamburger--slider">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </header>
+    <!-- menu -->
+     <div class="menu transition translate-x-full fixed top-0 bottom-0 z-40 right-0 bg-[#064C50] w-[384px] flex flex-col">
+        <div class="menuLogo my-5 mr-4">
+          <a href=""><img src="../../assets/images/Frame 41125890.png" alt=""></a>
+        </div>
+          <a href="" class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img src="../../assets/images/menu/profile-circle.png" alt=""> معلومات الحساب</a>
+          <a href="" class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img src="../../assets/images/menu/task-square.png" alt=""> طلباتي</a>
+          <a href="" class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img src="../../assets/images/menu/heart.png" alt=""> المنتجات المحفوظة</a>
+          <a href="" class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img src="../../assets/images/menu/empty-wallet.png" alt=""> محفظتي</a>
+          <a href="" class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img src="../../assets/images/menu/location.png" alt=""> العنوان</a>
+          <a href="" class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img src="../../assets/images/menu/logout.png" alt=""> تسجيل الخروج</a>
+     </div>
+     <!-- history links -->
+      <div class="historyLinks my-5 flex items-center justify-start gap-2">
+        <a href="" class="text-[#064C50]">الصفحة الرئيسية</a><span><i class="text-[#064C50] fas fa-chevron-left"></i></span>
+        <a href="" class="text-[#666666]">مستلزمات نظافة</a>
+      </div>
+    <!-- panner -->
+    <div class="pannerImg flex justify-around items-center rounded-lg">
+      <img src="../../assets/images/categories/Rectangle 18.png" alt="">
+    </div>
+    <div class="categories_cards my-6 flex flex-wrap justify-start items-center gap-2">
+        <a href="" class="categoriesCard group">
+            <div class="imageCard overflow-hidden mb-2">
+                <img src="../../assets/images/categories/Rectangle 9711.png" class="w-[282px] h-[282px] rounded-lg transition group-hover:rotate-90" alt="">
+            </div>
+            <p class="font-bold text-[#064C50] text-xl text-center">أدوات نظافة</p>
+        </a>
+        <a href="" class="categoriesCard group">
+            <div class="imageCard overflow-hidden mb-2">
+                <img src="../../assets/images/categories/Rectangle 9715.png" class="w-[282px] h-[282px] rounded-lg transition group-hover:rotate-90" alt="">
+            </div>
+            <p class="font-bold text-[#064C50] text-xl text-center">العناية بالأحذية</p>
+        </a>
+        <a href="" class="categoriesCard group">
+            <div class="imageCard overflow-hidden mb-2">
+                <img src="../../assets/images/categories/Rectangle 9713.png" class="w-[282px] h-[282px] rounded-lg transition group-hover:rotate-90" alt="">
+            </div>
+            <p class="font-bold text-[#064C50] text-xl text-center">منتجات التنظيف</p>
+        </a>
+        <a href="" class="categoriesCard group">
+            <div class="imageCard overflow-hidden mb-2">
+                <img src="../../assets/images/categories/Rectangle 9717.png" class="w-[282px] h-[282px] rounded-lg transition group-hover:rotate-90" alt="">
+            </div>
+            <p class="font-bold text-[#064C50] text-xl text-center">العناية بالملابس والمساحيق</p>
+        </a>
+        <a href="" class="categoriesCard group">
+            <div class="imageCard overflow-hidden mb-2">
+                <img src="../../assets/images/categories/Rectangle 9714.png" class="w-[282px] h-[282px] rounded-lg transition group-hover:rotate-90" alt="">
+            </div>
+            <p class="font-bold text-[#064C50] text-xl text-center">مناديل و أوراق مطبخ</p>
+        </a>
+        <a href="" class="categoriesCard group">
+            <div class="imageCard overflow-hidden mb-2">
+                <img src="../../assets/images/categories/Rectangle 9716.png" class="w-[282px] h-[282px] rounded-lg transition group-hover:rotate-90" alt="">
+            </div>
+            <p class="font-bold text-[#064C50] text-xl text-center">أدوات ومبيدات حشرية</p>
+        </a>
+        <a href="" class="categoriesCard group">
+            <div class="imageCard overflow-hidden mb-2">
+                <img src="../../assets/images/categories/Rectangle 9712.png" class="w-[282px] h-[282px] rounded-lg transition group-hover:rotate-90" alt="">
+            </div>
+            <p class="font-bold text-[#064C50] text-xl text-center">معطر جو</p>
+        </a>
+    </div>
+<!-- end container -->
+    </div>
+    <!-- عروض مستلزمات التنظيف -->
+     <div class="my-6 bg-[#FBFBFB] py-8">
+        <div class="container mx-auto">
+        <h2 class="text-center font-bold text-2xl">عروض مستلزمات التنظيف</h2>
+        <div class="relative mt-8 swiper-container-animation">    
+          <div id="loading-shimmer" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            <div class="shimmer-card" dir="rtl" aria-hidden="true"></div>
+            <div class="shimmer-card" dir="rtl" aria-hidden="true"></div>
+            <div class="shimmer-card" dir="rtl" aria-hidden="true"></div>
+            <div class="shimmer-card" dir="rtl" aria-hidden="true"></div>
+            <div class="shimmer-card" dir="rtl" aria-hidden="true"></div>
+          </div>
+          <div class="swiper mySwiper hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+             <div
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-md overflow-hidden flex flex-col items-center relative">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod" class="w-52 h-52 object-contain transition group-hover:scale-105" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+             <div
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-md overflow-hidden flex flex-col items-center relative">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod" class="w-52 h-52 object-contain transition group-hover:scale-105" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+            <div
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-md overflow-hidden flex flex-col items-center relative">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod" class="w-52 h-52 object-contain transition group-hover:scale-105" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+             <div
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-md overflow-hidden flex flex-col items-center relative">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod" class="w-52 h-52 object-contain transition group-hover:scale-105" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+             <div
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-md overflow-hidden flex flex-col items-center relative">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod" class="w-52 h-52 object-contain transition group-hover:scale-105" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+          class="product-card group w-[222px] bg-white rounded-2xl shadow-md overflow-hidden flex flex-col items-center relative">
+          <a href="">
+            <img src="../../assets/images/543989_main.jpg 1.png" alt="prod" class="w-52 h-52 object-contain transition group-hover:scale-105" />
+            <div class="prodDetails text-center mb-5">
+              <p class="text-base font-bold text-[#064C50] text-center mt-2 leading-tight">
+                عسل أسود <br />
+                (الرشيدي الميزان)
+              </p>
+              <p class="text-sm text-[#989A99] mt-1">700 جرام</p>
+              <p class="text-md font-bold text-[#064C50]">46 جنيه</p>
+            </div>
+          </a>
+          <div class="w-full py-4 bg-gray-100 rounded-t-2xl flex justify-center items-center">
+            <button
+              class="addButton w-10 h-10 cursor-pointer flex items-center justify-center bg-white rounded-full shadow-md border border-gray-300">
+              <span class="text-2xl font-bold text-gray-800 -translate-y-0.5">+</span>
+            </button>
+
+            <div class="counterContainer hidden flex items-center space-x-4">
+              <button class="decrease w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">-</button>
+              <span class="counter text-lg font-semibold">1</span>
+              <button class="increase w-8 h-8 bg-gray-200 rounded-full text-xl font-bold">+</button>
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+        <button class="absolute top-44 z-20 -right-0 lg:-right-16 prev-slide text-xl cursor-pointer w-12 h-12 flex items-center justify-center rounded-full bg-transparent border border-[#064C50] text-[#064C50]">
+            ❮
+          </button>
+          <button class="absolute top-44 z-20 -left-0 lg:-left-16 next-slide text-xl cursor-pointer w-12 h-12 flex items-center justify-center rounded-full bg-transparent border border-[#064C50] text-[#064C50]">
+            ❯
+          </button>
+    </div>
+    </div>
+
+    </div>
+     </div>
+    
+  
+  <!-- start footer -->
+   <footer class="bg-[#064C50] py-12">
+    <div class="container mx-auto">
+      <div class="footer flex flex-col gap-8">
+        <!-- Top Section -->
+        <div
+          class="flex flex-col justify-center items-center lg:justify-between lg:items-start text-white border-b border-[#FFFFFF1A] pb-8 lg:flex-row">
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">خدمة العملاء</p>
+            <a href="" class="my-2">الأسئلة الشائعة</a>
+            <a href="" class="my-2">اتصل بنا</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">عن فريش ماركت</p>
+            <a href="" class="my-2">معلومات عنا</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">المزيد من فريش ماركت</p>
+            <a href="" class="my-2">الشروط والأحكام</a>
+            <a href="" class="my-2">سياسة الخصوصية</a>
+            <a href="" class="my-2">قدم لنا ملاحظاتك</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">تحميل تطبيق الجوال</p>
+            <a href="" class="my-2 flex justify-end items-center rounded-lg p-1 gap-2 border border-white md:w-[160px]">
+              <div class="apple text-end text-white">
+                <p class="font-medium">Download on the</p>
+                <p class="font-bold text-xl">App Store</p>
+              </div>
+              <img src="../../assets/images/footer/Vector 2.png" alt="">
+            </a>
+            <a href="" class="my-2 flex justify-end items-center rounded-lg p-1 gap-2 border border-white md:w-[160px]">
+              <div class="apple text-end text-white">
+                <p class="font-medium">GET IT ON</p>
+                <p class="font-bold text-xl ">Google Play</p>
+              </div>
+              <img src="../../assets/images/footer/Group.png" alt="">
+            </a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">تابعونا على مواقع التواصل الاجتماعي</p>
+            <div class="social flex flex-row justify-between items-center gap-2">
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/twitter logo.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector (1).png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector 4.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector 3.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="flex justify-between items-center text-white text-sm">
+          <p>© جميع الحقوق محفوظة 2024 | freshmarket</p>
+
+          <div class="flex items-center gap-4">
+            <p>يمكنك الدفع باستخدام</p>
+            <img src="../../assets/images/footer/Frame 41125881.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../../assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="../../assets/js/categories.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASQ Est</title>
+    <!-- css links files -->
+    <link href="../../output.css" rel="stylesheet" />
+     <link rel="stylesheet" href="../../assets/css/all.css" />
+  <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css"
+    />
+    <style>
+      .ts-control {
+        border: 1px solid #e7e4e5 !important;
+        background-color: #fff !important;
+        z-index: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#F5F5F5] h-screen">
+    <!-- loader -->
+    <div class="loader fixed flex justify-center items-center z-50 bg-[#ffffff] top-0 bottom-0 left-0 right-0">
+      <div class="shapes-1"></div>
+      <div class="shapes-11"></div>
+    </div>
+    <!-- popup -->
+    <div
+      id="modal"
+      class="hidden fixed inset-0 bg-opacity-40 bg-[#00000074] backdrop-blur-sm flex items-center justify-center z-50"
+    >
+      <div
+        class="changePasswordPopup bg-white rounded-4xl shadow-lg py-12 w-9/12 relative"
+      >
+        <div class="w-1/2 mx-auto">
+          <div class="flex justify-center mb-2">
+            <img
+              src="../../assets/images/key-02.png"
+              class="w-8 h-8"
+              alt=""
+            />
+          </div>
+          <h2 class="text-center text-lg font-bold mb-6">Change password!</h2>
+          <form>
+            <label class="block text-sm font-semibold">Current Password</label>
+            <input
+              type="password"
+              placeholder="Enter password"
+              class="w-full border border-gray-300 p-2 rounded-md mt-1 mb-4 focus:ring-2 focus:ring-[#72D84B]"
+            />
+
+            <label class="block text-sm font-semibold">New Password</label>
+            <input
+              type="password"
+              placeholder="Confirm password"
+              class="w-full border border-gray-300 p-2 rounded-md mt-1 mb-4 focus:ring-2 focus:ring-[#72D84B]"
+            />
+
+            <label class="block text-sm font-semibold">Confirm Password</label>
+            <input
+              type="password"
+              placeholder="Re-type new password"
+              class="w-full border border-gray-300 p-2 rounded-md mt-1 mb-1 focus:ring-2 focus:ring-[#72D84B]"
+            />
+            <a href="#" class="text-[#72D84B] text-sm">Forgot password?</a>
+            <button
+              type="submit"
+              class="w-full mt-4 bg-black text-white py-2 rounded-xl hover:opacity-80"
+            >
+              Change password
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- congraulation Popup -->
+      <div
+        class="hidden congraulationPopup bg-white rounded-4xl shadow-lg py-12 h-[456px] w-9/12 flex flex-col justify-center items-center"
+      >
+        <div class="w-1/2 mx-auto">
+          <div class="flex justify-center mb-2">
+            <img src="../../assets/images/elements.png" class="" alt="" />
+          </div>
+          <div class="text-center">
+            <h2 class="font-semibold mt-3 mb-2 text-2xl">Congratulations!</h2>
+            <p class="text-[#242424a2]">
+              Your password has been successfully changed
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- dashboard -->
+    <div class="parentContainerDash flex justify-end items-start">
+      <!-- Sidebar -->
+       <div id="sidebar" class="fixed bg-[#FFFFFF] border-l border-[#F0F0F0] min-h-screen z-40 top-0 bottom-0 right-0 w-[250px] px-6 py-10 overflow-y-auto transform translate-x-full lg:translate-x-0 transition-transform duration-300">
+        <aside class="flex flex-col justify-between items-start">
+          <a href="dashboard.html">
+            <img
+              src="../../assets/images/Frame 1618873305.png"
+              alt=""
+            />
+          </a>
+          <div class="links flex flex-col items-start gap-8 mt-10">
+            <a
+              href="dashboard.html"
+              class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+            >
+              <div class="relative w-5 h-5">
+                <img
+                  src="../../assets/images/dashboard icons/Dashboard.png"
+                  class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                />
+            
+              </div>
+              لوحة التحكم
+            </a>
+
+            <a
+              href="productsList.html"
+              class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+            >
+              <div class="relative w-5 h-5">
+                <img
+                  src="../../assets/images/dashboard icons/bag.png"
+                  class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                />
+            
+              </div>
+              قائمة المنتجات
+            </a>
+
+            <a
+            href="categoriesList.html"
+            class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+          >
+            <div class="relative w-5 h-5">
+              <img
+                src="../../assets/images/category.png"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+              />
+          
+            </div>
+            الأقسام
+          </a>
+
+            <a
+              href="ordersMangament.html"
+              class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+            >
+              <div class="relative w-5 h-5">
+                <img
+                  src="../../assets/images/dashboard icons/box-add.png"
+                  class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                />
+              </div>
+              إدارة الطلبات
+            </a>
+            <a
+              href="usersMangament.html"
+              class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+            >
+              <div class="relative w-5 h-5">
+                <img
+                  src="../../assets/images/dashboard icons/user-octagon.png"
+                  class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                />
+              </div>
+              إدارة العملاء
+            </a>
+            <a
+              href=""
+              class="relative text-[#828282] flex items-center gap-2 group transition-all duration-200 w-full hover:text-[#73D64C] hover:translate-x-7"
+            >
+              <div class="relative w-5 h-5">
+                <img
+                  src="../../assets/images/dashboard icons/login.png"
+                  class="absolute inset-0 w-full h-full object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                />
+              </div>
+              تسجيل الخروج  
+            </a>
+          </div>
+        </aside>
+     
+      </div>
+      <div class="main lg:mr-[260px] my-2 pl-3 px-3 lg:px-0 lg:pl-3 w-full">
+        <header
+          class="bg-white w-full rounded-xl py-2 px-4 md:px-12 flex justify-between items-center border border-[#24242429] z-30"
+        >
+          <p class="text-[#064C50] text-sm md:text-lg">
+            مرحبا<span class="hidden md:inline"> بعودتك</span>,
+            <span class="font-semibold">عمر!</span>
+          </p>
+
+          <div class="user flex justify-between items-center gap-4 md:gap-8">
+            <div class="flex justify-start items-center gap-2">
+              <img
+                src="../../assets/images/Frame 1000001132.png"
+                class="w-10 h-10 md:w-12 md:h-12 rounded-full"
+                alt=""
+              />
+              <div class="info text-xs md:text-sm">
+                <h1 class="text-[#064C50] font-bold">عمر مشتهى</h1>
+                <p class="text-[#2424249d] hidden sm:block">
+                  example@example.com
+                </p>
+              </div>
+            </div>
+            <div
+              class="activeAccount bg-[#E6F4F5] flex justify-between items-center gap-1 md:gap-2 py-1 px-2 rounded-full text-xs md:text-sm"
+            >
+              <span
+                class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-[#72D84B]"
+              ></span>
+              <span class="hidden sm:block">نشط</span>
+            </div>
+          </div>
+
+          <!-- زر القائمة يظهر فقط في الشاشات الصغيرة -->
+          <button
+            id="toggleSidebar"
+            class="lg:hidden bg-white w-8 h-8 p-1 rounded-md shadow-md"
+          >
+            <i class="fas fa-bars text-lg"></i>
+          </button>
+        </header>
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-2 w-full mt-5">
+          <!-- Card 1 -->
+          <div class="bg-[#FDEBF0] p-4 rounded-xl w-full shadow-md">
+            <p class="text-[#000000] mb-2 text-lg">جميع المستخدمين</p>
+            <p class="text-2xl font-bold">124 مستخدم</p>
+          </div>
+          <div class="bg-[#f4e4ff] p-4 rounded-xl w-full shadow-md">
+            <p class="text-[#000000] mb-2 text-lg">الاستخدام النشط</p>
+            <p class="text-2xl font-bold">1,342 مستخدم</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-[#E8F4E5] p-4 rounded-xl w-full shadow-md">
+            <p class="text-[#000000] mb-2 text-lg">تعطيل</p>
+            <p class="text-2xl font-bold">20 مستخدم</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-[#ff950028] p-4 rounded-xl w-full shadow-md">
+            <p class="text-[#000000] mb-2 text-lg">كتلة ج</p>
+            <p class="text-2xl font-bold">2 مستخدم</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-between items-start gap-4 mt-4 md:flex-nowrap">
+          <!-- العمود الأول (التشارت الكبيرة) -->
+          <div class="flex flex-col gap-2 w-full">
+          <div class="bg-[#FFFFFF] border-[#E0E0E0] rounded-xl p-2 ">
+                 <div class="flex justify-between items-center w-full gap-3">
+                  <h1 class="text-[#383E49] font-medium text-xl">المنتجات</h1>
+                  <div class="buttons flex justify-between items-center gap-2">
+                    <a href="addProducts.html" class="cursor-pointer px-4 py-2 text-white bg-[#064C50] rounded-md">أضف منتج</a>
+                    <button class="cursor-pointer flex justify-center items-center gap-2 px-4 py-2 rounded-md bg-white border border-[#1018280D]"><img src="../../assets/images/Filters lines.png" alt=""> تصفية</button>
+                    <button class="cursor-pointer px-4 py-2 rounded-md bg-white border border-[#1018280D]">تحميل الكل</button>
+                  </div>
+                 </div>
+                <div class="overflow-x-auto">
+                  <table class="w-max md:w-full border-separate border-spacing-y-4">
+                    <thead>
+                        <tr class="text-[#828282] border-b border-[#E8EAED] text-sm">
+                            <th class="pt-1 pb-3 px-4 border-b border-[#E8EAED] text-right">منتجات</th>
+                            <th class="pt-1 pb-3 px-4 border-b border-[#E8EAED] text-center">سعر الشراء</th>
+                            <th class="pt-1 pb-3 px-4 border-b border-[#E8EAED] text-center">كمية</th>
+                            <th class="pt-1 pb-3 px-4 border-b border-[#E8EAED] text-center">تاريخ انتهاء الصلاحية</th>
+                            <th class="pt-1 pb-3 px-4 border-b border-[#E8EAED] text-center">التوفر</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b border-[#E8EAED]">
+                          <td class="pb-3 px-4 border-b border-[#E8EAED] rounded-r-xl">
+                                <div class="flex justify-start items-center gap-2">
+                                    <img class="w-10 h-10 object-cover rounded-full" src="../../assets/images/543989_main.jpg 1.png" alt="">
+                                    <span>طحينة ابو حميد</span>
+                                </div>
+                            </td>
+                          <td class="pb-3 px-4 border-b border-[#E8EAED] text-center">20 جنيه</td> 
+                            <td class="pb-3 px-4 border-b border-[#E8EAED] text-center">200</td>
+                            <td class="pb-3 px-4 border-b border-[#E8EAED] text-center">02/12/2024</td>
+                            <td class="pb-3 px-4 border-b border-[#E8EAED] rounded-l-xl text-center"><span class="px-4 py-1 rounded-xl bg-[#1DA2431A] text-green-500">متوفر</span></td>
+                        </tr>
+                        <tr class="bg-white border-b border-[#E8EAED]">
+                          <td class="pb-3 px-4 border-b border-[#E8EAED] rounded-r-xl">
+                                <div class="flex justify-start items-center gap-2">
+                                    <img class="w-10 h-10 object-cover rounded-full" src="../../assets/images/543989_main.jpg 1.png" alt="">
+                                    <span>طحينة ابو حميد</span>
+                                </div>
+                            </td>
+                          <td class="pb-3 px-4 border-b border-[#E8EAED] text-center">20 جنيه</td> 
+                            <td class="pb-3 px-4 border-b border-[#E8EAED] text-center">200</td>
+                            <td class="pb-3 px-4 border-b border-[#E8EAED] text-center">02/12/2024</td>
+                            <td class="pb-3 px-4 border-b border-[#E8EAED] rounded-l-xl text-center"><span class="px-4 py-1 rounded-xl bg-[#C921271A] text-[#C92127]">غير متوفر</span></td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+                </div>
+                <div class="w-full flex justify-between items-center px-4 gap-5">
+                  <button class="border border-[#D0D3D9] px-5 py-2 rounded-md text-[#858D9D]">السابق</button>
+                  <p class="text-[#858D9D]">صفحة ١ من ١٠</p>
+                  <button class="border border-[#D0D3D9] px-5 py-2 rounded-md text-[#858D9D]">التالي</button>
+                 </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/script.js"></script> 
+       <script src="https://cdn.jsdelivr.net/npm/tom-select"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASQ Est</title>
+  <!-- css links files -->
+  <link href="../../output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/all.css" />
+  <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../assets/css/hover-min.css" />
+  <link rel="stylesheet" href="../../assets/css/hamburgers.min.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body class="bg-[#F6FAF6]">
+  <!-- loader -->
+  <div class="loader fixed flex justify-center items-center z-50 bg-[#064C50] top-0 bottom-0 left-0 right-0">
+    <img src="../../assets/images/Frame 41125890.png" alt="">
+    <div class="spinner-5"></div>
+  </div>
+  <!-- Add this popup div after the existing _popup_ div -->
+  <div
+    class="map_popup_ hidden bg-[#4158595d] flex justify-center items-center fixed top-0 bottom-0 left-0 right-0 z-50">
+    <div class="bg-white rounded-md w-2/3 h-3/4 flex flex-col p-6">
+      <div class="flex justify-between items-center mb-4">
+        <div class="para">
+          <h3 class="text-[#415859] font-bold text-xl">اختر موقعك</h3>
+          <p class="text-[#415859]">اختر موقعك على الخريطة لمساعدتنا في عرض المنتجات الأكثر صلة لك</p>
+        </div>
+        <button class="closeMapBtn text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <form action="">
+        <div class="relative serchFro my-4">
+          <input type="text" id="id" name="name" placeholder="البحث عن اماكن"
+            class="w-full bg-[#F5FAFA] rounded-lg py-3 px-5 outline-none" />
+          <button class="bg-[#064C50] p-2 rounded-l-lg cursor-pointer absolute top-0 bottom-0 left-0"><img
+              src="../../assets/images/search-02.png" alt=""></button>
+        </div>
+      </form>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108861.88804451965!2d34.45217755!3d31.5017167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd7f054e542767%3A0x7ff98dc913046392!2sGaza!5e0!3m2!1sen!2s!4v1674129238260!5m2!1sen!2s"
+        width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div class="flex justify-start items-center gap-4 mt-5">
+        <button id="confirmLocation"
+          class="bg-[#064C50] cursor-pointer w-[213px] text-white py-2 rounded hover:bg-teal-700">تأكيد الموقع</button>
+      </div>
+      <div class="p-3 bg-[#F5FAFA] rounded-md flex justify-start items-center mt-6 gap-3">
+        <img src="../../assets/images/exclamation 1.png" alt="">
+        <p class="text-[#064C50]">قد لا تكون بعض الفئات متاحة في المنطقة المحددة</p>
+      </div>
+    </div>
+  </div>
+  <div class="delete_popup_ hidden bg-[#4158595d] flex justify-center items-center fixed top-0 bottom-0 left-0 right-0 z-50">
+    <div class="bg-white rounded-xl w-[400px] flex flex-col p-6">
+      <div class="flex flex-col items-center text-center gap-4">
+        <h3 class="text-[#064C50] font-bold text-xl">هل تريد حذف قائمة الرغبات "سلتي"؟</h3>
+        <div class="flex justify-center items-center gap-4 w-full mt-4">
+          <button class="bg-[#064C50] text-white px-8 py-2 rounded-lg hover:bg-teal-700 deleteConfirmBtn">نعم، أنا متأكد</button>
+          <button class="text-[#064C50] px-8 py-2 rounded-lg border border-[#064C50] closeDeleteBtn">إلغاء</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add List Popup -->
+  <div class="add-list-popup hidden fixed inset-0 bg-[#0000004D] bg-opacity-30 flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-6 w-[500px]">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-xl font-bold">أضف إلى قائمة التسوق</h3>
+        <button class="closePopupBtn text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <!-- <form action=""> -->
+
+      <div class="mb-4">
+        <label for="" class="text-[#485051]">إنشاء قائمة جديدة</label>
+        <input type="text" placeholder="إنشاء قائمة جديدة"
+          class="mt-2 border border-[#E4E7E7] w-full rounded-lg py-3 px-5">
+      </div>
+      <button class="saveListBtn bg-[#064C50] text-white w-full py-2 rounded">حفظ</button>
+      <!-- </form> -->
+    </div>
+  </div>
+  <div class="_popup_ hidden bg-[#4158595d] flex justify-center items-center fixed top-0 bottom-0 left-0 right-0 z-50">
+    <div class="bg-white rounded-md md:w-2/3 flex flex-col p-6">
+      <div class="flex justify-end items-center mb-4">
+        <button class="closeBtn cursor-pointer text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img src="../../assets/images/Group 205.png" width="80px" alt="">
+        <h4 class="font-bold text-xl">إلغاء الطلب</h4>
+        <p class="font-medium text-[#3F3F3F]">هل تريد إلغاء هذا الطلب</p>
+        <div class="flex justify-start items-center gap-4 mt-5">
+          <button id="confirmLocation"
+            class="bg-[#064C50] cursor-pointer md:w-[213px] text-white px-4 md:px-0 py-2 rounded hover:bg-teal-700">تأكيد
+            الموقع</button>
+          <button id="confirmLocation"
+            class="text-[#064C50] cursor-pointer underline md:w-[213px] px-4 md:px-0 py-2 font-medium rounded closeBtn">عدم
+            إلغاء الطلب</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto">
+     <header class="mt-3 mb-5 bg-[#064C50] flex flex-row-reverse justify-between items-center z-40 py-3 px-4 rounded-lg">
+      <div class="images flex justify-start items-center gap-3">
+        <a href="shoppingCart.html"
+          class="cartHeader bg-[#fff] relative flex justify-center items-center w-[48px] h-[48px] object-cover rounded-full">
+          <img src="../../assets/images/Icon.png" class="w-5 h-5" alt="" />
+          <span
+            class="w-4 h-4 absolute top-2 right-2 text-base rounded-full text-white flex justify-center items-center bg-[#EB5E5A]">2</span>
+        </a>
+        <a href="" class="personalPageLink">
+          <img src="../../assets/images/Rectangle 44.png"
+            class="w-[48px] h-[48px] border border-dashed border-[#AD9D44] rounded-full p-0.5" alt="" />
+        </a>
+      </div>
+      <div class="flex paraHeader">
+        <img src="../../assets/images/Group 72.png" alt="" />
+        <p class="text-[#fff] font-bold">
+          اطلب الآن واستلم طلبك خلال 15
+          <span class="text-[#AD9D44]">دقيقة فقط!</span>
+        </p>
+      </div>
+      <form action="" class="relative">
+        <input type="text" name="" placeholder="ابحث عن البقالة أو الخضروات أو اللحوم"
+          class="searchInput bg-white w-[350px] py-3 pr-13 pl-5 rounded-full" id="" />
+        <button class="text-emerald-700 absolute right-6 top-3">
+          <img src="../../assets/images/Icon (1).svg" class="w-5 h-5" alt="" />
+        </button>
+        <div class="searchPopup hidden absolute top-15 px-5 py-4 bg-white shadow-md rounded-lg w-[690px]">
+          <h3 class="font-bold text-xl text-[#064C50] mb-3">عمليات البحث الموصى بها</h3>
+          <div class="muasaa">
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+          </div>
+          <h3 class="font-bold text-xl text-[#064C50] my-3">أشهر عمليات البحث</h3>
+          <div class="famous flex flex-wrap justify-between items-center gap-2">
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+            <a href="" class="flex justify-start items-center bg-[#F6F7F7] py-2 px-4 rounded-lg gap-2 w-[320px]">
+              <img src="../../assets/images/_main.jpg.png" alt="">
+              <div class="prodData">
+                <p class="text-[#064C50] font-medium">مشروب بارد(فانتا)</p>
+                <p class="text-lg font-bold text-[#064C50]">10 جنيه </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </form>
+      <a href="index.html" class="logo">
+        <img src="../../assets/images/Frame 41125890.png" class="imgLogo" alt="" />
+        <img src="../../assets/images/Vector.png" class="responsiveLogo hidden" alt="">
+      </a>
+      <div class="hamburger hamburger--slider">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </header>
+    <!-- menu -->
+    <!-- menu -->
+    <div
+      class="menu transition translate-x-full fixed top-0 bottom-0 z-40 right-0 bg-[#064C50] w-[384px] flex flex-col">
+      <div class="menuLogo my-5 mr-4">
+        <a href=""><img src="../../assets/images/Frame 41125890.png" alt=""></a>
+      </div>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+          src="../../assets/images/menu/profile-circle.png" alt=""> معلومات الحساب</a>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+          src="../../assets/images/menu/task-square.png" alt=""> طلباتي</a>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+          src="../../assets/images/menu/heart.png" alt=""> المنتجات المحفوظة</a>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+          src="../../assets/images/menu/empty-wallet.png" alt=""> محفظتي</a>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+          src="../../assets/images/menu/location.png" alt=""> العنوان</a>
+      <a href=""
+        class="flex w-full px-4 py-2 gap-2 justify-start items-center text-white transition hover:bg-[#ffffff36]"><img
+          src="../../assets/images/menu/logout.png" alt=""> تسجيل الخروج</a>
+    </div>
+
+    <div class="flex justify-start items-center">
+      <div class="bg-[#064C50] w-[374px] text-white py-6 px-4 rounded-lg account-box">
+        <h2 class="text-lg font-bold">حسابي</h2>
+        <p>Hisham، أهلا بك</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
+      <!-- القائمة الجانبية -->
+      <div class="bg-white p-4 rounded-lg shadow-md col-span-2 lg:col-span-1">
+        <div class="flex lg:hidden justify-between items-center mb-4">
+          <h3 class="font-bold text-lg">القائمة</h3>
+          <button id="mobileMenuToggle" class="text-[#064C50]">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="mt-4 space-y-2 hidden lg:block" id="sideMenu">
+          <li
+            class="links_ px-2 py-7 cursor-pointer flex items-center justify-between transition hover:bg-[#F5FAFA] rounded"
+            data-target="account-info">
+            <div class="flex justify-start items-center gap-2">
+              <img src="../../assets/images/profile-circle.png" alt="">
+              <span>معلومات الحساب</span>
+            </div>
+            <img src="../../assets/images/Right.png" alt="">
+          </li>
+          <li
+            class="links_ px-2 py-7 cursor-pointer flex items-center justify-between transition hover:bg-[#F5FAFA] rounded"
+            data-target="orders">
+            <div class="flex justify-start items-center gap-2">
+              <img src="../../assets/images/task-square.png" alt="">
+              <span>طلباتي</span>
+            </div>
+            <img src="../../assets/images/Right.png" alt="">
+          </li>
+          <li
+            class="links_ px-2 py-7 cursor-pointer flex items-center justify-between transition hover:bg-[#F5FAFA] rounded"
+            data-target="list-of-sales">
+            <div class="flex justify-start items-center gap-2">
+              <img src="../../assets/images/Icon.png" alt="">
+              <span>قائمة المشتريات</span>
+            </div>
+            <img src="../../assets/images/Right.png" alt="">
+          </li>
+          <li
+            class="links_ px-2 py-7 cursor-pointer flex items-center justify-between transition hover:bg-[#F5FAFA] rounded"
+            data-target="saved-products">
+            <div class="flex justify-start items-center gap-2">
+              <img src="../../assets/images/empty-wallet.png" alt="">
+              <span>محفظتي</span>
+            </div>
+            <img src="../../assets/images/Right.png" alt="">
+          </li>
+          <li
+            class="links_ px-2 py-7 cursor-pointer flex items-center justify-between transition hover:bg-[#F5FAFA] rounded"
+            data-target="address">
+            <div class="flex justify-start items-center gap-2">
+              <img src="../../assets/images/location.png" alt="">
+              <span>العنوان</span>
+            </div>
+            <img src="../../assets/images/Right.png" alt="">
+          </li>
+            <form action="" method="" class="w-full">
+              <button type="submit"
+                class="w-full  px-2 py-7 cursor-pointer flex items-center justify-between transition hover:bg-[#F5FAFA] rounded">
+                <div class="flex justify-start items-center gap-2">
+                  <img src="../../assets/images/logout.png" alt="">
+                  <span>تسجيل الخروج</span>
+                </div>
+                <img src="../../assets/images/Right.png" alt="">
+              </button>
+            </form>
+        </ul>
+      </div>
+      <!-- محتوى الصفحة -->
+      <div class="bg-white p-6 rounded-lg shadow-md col-span-2" id="content">
+        <div id="account-info" class="content-section pt-8">
+          <h2 class="text-xl font-bold text-[#064C50] mb-4">التفاصيل الشخصية</h2>
+          <form class="grid grid-cols-2 gap-4">
+            <div class="formGroup mt-2">
+              <label for="name" class="text-[#555555]">الأسم</label>
+              <input type="text" id="name" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5"
+                placeholder="Omar" />
+            </div>
+            <div class="formGroup mt-2">
+              <label for="secondName" class="text-[#555555]">اللقب</label>
+              <input type="text" id="secondName" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5"
+                placeholder="Mushtaha" />
+            </div>
+            <div class="formGroup mt-2">
+              <label for="phone" class="text-[#555555]">رقم الهاتف</label>
+              <input type="text" id="phone" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5"
+                placeholder="" />
+            </div>
+            <div class="formGroup mt-2">
+              <label for="email" class="text-[#555555]">البريد الإلكتروني</label>
+              <input type="email" id="email" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5"
+                placeholder="يرجى إدخال بريدك الإلكتروني" />
+            </div>
+            <p class="font-medium text-[#496061]">لا يمكنك تغيير رقم الهاتف</p>
+            <a href="" data-target="update-email" class="font-medium underline text-[#064C50] links_">هل تريد تحديث
+              البريد الإلكتروني؟</a>
+            <div class="flex justify-between items-center col-span-2 mt-7">
+              <p class="text-[#415859] text-lg">كلمة المرور</p>
+              <a href="" data-target="change-password" class="font-medium underline text-[#064C50] links_">هل تريد تحديث
+                كلمة المرور؟</a>
+            </div>
+            <button class="bg-[#064C50] cursor-pointer w-[213px] text-white py-2 rounded hover:bg-teal-700">حفظ
+              التغييرات</button>
+          </form>
+        </div>
+        <div id="update-email" class="content-section hidden pt-8">
+          <h2 class="text-xl font-bold text-[#064C50] mb-4">تحديث البريد الالكتروني</h2>
+          <form class="grid grid-cols-2 gap-4">
+            <div class="formGroup mt-2">
+              <label for="name" class="text-[#555555]">البريد الإلكتروني</label>
+              <input type="email" id="name" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5"
+                placeholder="Omar" />
+            </div>
+            <div class="formGroup mt-2">
+              <label for="secondName" class="text-[#555555]">كلمة المرور</label>
+              <input type="password" id="secondName" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5"
+                placeholder="Mushtaha" />
+            </div>
+            <div class="flex justify-start items-center gap-4">
+              <button class="bg-[#064C50] cursor-pointer w-[213px] text-white py-2 rounded hover:bg-teal-700">تحديث
+                البريد الإلكتروني</button>
+              <button data-target="account-info" class="text-[#064C50] underline links_">إلغاء</button>
+            </div>
+          </form>
+        </div>
+        <div id="change-password" class="content-section hidden pt-8">
+          <h2 class="text-xl font-bold text-[#064C50] mb-4">تغيير كلمة المرور</h2>
+          <form class="grid grid-cols-1 gap-4">
+            <div class="formGroup mt-2">
+              <label for="name" class="text-[#555555]">كلمة المرور الحالية</label>
+              <br>
+              <input type="password" id="name" class="w-1/2 border border-[#064C50] mt-2 rounded-lg py-3 px-5"
+                placeholder="كلمة المرور الحالية" />
+            </div>
+            <div class="formGroup mt-2">
+              <label for="name" class="text-[#555555]">كلمة المرور الجديدة</label>
+              <br>
+              <input type="password" id="name" class="w-1/2 border border-[#064C50] mt-2 rounded-lg py-3 px-5"
+                placeholder="كلمة المرور الجديدة" />
+            </div>
+            <div class="formGroup mt-2">
+              <label for="name" class="text-[#555555]">تأكيد كلمة المرور الجديدة</label>
+              <br>
+              <input type="password" id="name" class="w-1/2 border border-[#064C50] mt-2 rounded-lg py-3 px-5"
+                placeholder="تأكيد كلمة المرور الجديدة" />
+            </div>
+
+            <div class="flex justify-start items-center gap-4">
+              <button class="bg-[#064C50] cursor-pointer w-[213px] text-white py-2 rounded hover:bg-teal-700">حفظ
+                التعديلات</button>
+              <button data-target="account-info" class="text-[#064C50] underline links_">إلغاء</button>
+            </div>
+          </form>
+        </div>
+        <div id="orders" class="content-section pt-8 hidden">
+          <h2 class="text-xl font-bold text-[#064C50] mb-4">قائمة الطلبات</h2>
+          <div class="space-y-4">
+            <div class="border-b border-[#E9F4F5] p-4">
+              <div class="flex justify-between">
+                <span class="text-[#064C50] font-medium">#10044884 البقالة</span>
+                <button class="orderd_ bg-gray-300 text-gray-700 cursor-pointer px-2 py-1 rounded">تم الطلب</button>
+              </div>
+              <div class="data_info flex justify-between items-center gap-2 my-4">
+                <p class="text-[#999999] orderd_hide_info_">تاريخ الطلب: <span class="text-[#064C50] font-medium">5 مارس
+                    2025</span></p>
+                <p class="text-[#999999] orderd_hide_info_">الوقت: <span class="text-[#064C50] font-medium"> 04:00 مساء
+                    - 01:00 مساء</span></p>
+                <p class="text-[#999999]">المجموع: <span class="text-[#064C50] font-medium">5.5₪</span></p>
+              </div>
+              <a href="#" class="text-[#064C50] font-medium underline links_" data-target="orderDetails">تفاصيل
+                الطلب</a>
+            </div>
+            <div class="border-b border-[#E9F4F5] p-4">
+              <div class="flex justify-between">
+                <span class="text-[#064C50] font-medium">#10044884 البقالة</span>
+                <button class="orderd_ bg-gray-300 text-gray-700 cursor-pointer px-2 py-1 rounded">تم الطلب</button>
+              </div>
+              <div class="data_info flex justify-between items-center gap-2 my-4">
+                <p class="text-[#999999] orderd_hide_info_">تاريخ الطلب: <span class="text-[#064C50] font-medium">5 مارس
+                    2025</span></p>
+                <p class="text-[#999999] orderd_hide_info_">الوقت: <span class="text-[#064C50] font-medium"> 04:00 مساء
+                    - 01:00 مساء</span></p>
+                <p class="text-[#999999]">المجموع: <span class="text-[#064C50] font-medium">5.5₪</span></p>
+              </div>
+              <a href="#" class="text-[#064C50] font-medium underline links_" data-target="orderDetails">تفاصيل
+                الطلب</a>
+            </div>
+            <div class="border-b border-[#E9F4F5] p-4">
+              <div class="flex justify-between">
+                <span class="text-[#064C50] font-medium">#10044884 البقالة</span>
+                <button class="orderd_ bg-gray-300 text-gray-700 cursor-pointer px-2 py-1 rounded">تم الطلب</button>
+              </div>
+              <div class="data_info flex justify-between items-center gap-2 my-4">
+                <p class="text-[#999999] orderd_hide_info_">تاريخ الطلب: <span class="text-[#064C50] font-medium">5 مارس
+                    2025</span></p>
+                <p class="text-[#999999] orderd_hide_info_">الوقت: <span class="text-[#064C50] font-medium"> 04:00 مساء
+                    - 01:00 مساء</span></p>
+                <p class="text-[#999999]">المجموع: <span class="text-[#064C50] font-medium">5.5₪</span></p>
+              </div>
+              <a href="#" class="text-[#064C50] font-medium underline links_" data-target="orderDetails">تفاصيل
+                الطلب</a>
+            </div>
+          </div>
+        </div>
+        <div id="orderDetails" class="content-section pt-8 hidden">
+          <h2 class="text-xl font-bold text-[#064C50] mb-4">تفاصيل الطلب</h2>
+          <div class="space-y-4">
+            <div class="p-4">
+              <div class="flex justify-between">
+                <span class="text-[#064C50] font-medium">#10044884 البقالة</span>
+                <button class=" bg-gray-300 text-gray-700 cursor-pointer px-2 py-1 rounded">تم الطلب</button>
+              </div>
+              <div class="data_info flex justify-between items-center gap-2 my-4">
+                <p class="text-[#999999]">تاريخ الطلب: <span class="text-[#064C50] font-medium">5 مارس 2025</span></p>
+                <p class="text-[#999999]">الوقت: <span class="text-[#064C50] font-medium"> 04:00 مساء - 01:00
+                    مساء</span></p>
+                <p class="text-[#999999]">المجموع: <span class="text-[#064C50] font-medium">5.5₪</span></p>
+              </div>
+            </div>
+            <!-- تفاصيل الشحن -->
+            <div class="shippingDetails py-3 border-y border-[#E9F4F54D]">
+              <h2 class="text-xl font-bold mb-2 text-[#064C50]">تفاصيل الشحن</h2>
+              <div class="details">
+                <div class="flex justify-between pb-4">
+                  <div>
+                    <p class="text-lg font-medium text-[#064C50]">تفاصيل الشحن</p>
+                    <p class="text-[#415859]">Hisham aldahoudi</p>
+                    <p class="text-[#415859]">01645624789</p>
+                  </div>
+                  <div>
+                    <p class="text-lg font-medium text-[#064C50]">طريقة الشحن</p>
+                  </div>
+                  <div>
+                    <p class="text-lg font-medium text-[#064C50]">تفاصيل الدفع</p>
+                    <p class="text-[#415859] mb-2">الدفع عند الاستلام</p>
+                    <div class="flex justify-between items-center gap-12">
+                      <p class="text-[#415859] mb-1">الإجمالي الفرعي</p>
+                      <p class="font-medium text-[#064C50]">15.5 ج م</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-12">
+                      <p class="text-[#415859] mb-1">تكاليف الشحن</p>
+                      <p class="font-medium text-[#064C50]">40 ج م</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-12">
+                      <p class="text-[#064C50] mb-1 text-lg font-bold">المجموع</p>
+                      <p class="font-medium text-[#064C50]">55 ج م</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="canceledOrderBtn bg-[#064C50] cursor-pointer w-[213px] text-white py-2 rounded hover:bg-teal-700">إعادة
+                  الطلب</button>
+
+              </div>
+            </div>
+            <div class="flex justify-between items-center gap-4 w-fit pb-3 mt-7">
+              <h2 class="text-xl font-bold text-[#064C50]">المنتجات المطلوبة</h2>
+              <span class="text-[#999999] text-sm font-medium">1 منتج</span>
+            </div>
+
+            <!-- تفاصيل المنتج -->
+            <div class="flex items-center justify-between mt-3 w-fit">
+              <img src="../../assets/images/543989_main.jpg 2.png" alt="بطاطس" class="w-12 h-12 rounded-lg">
+              <div>
+                <p class="font-bold text-gray-800">بطاطس - بالوزن 1 كجم</p>
+                <p class="text-gray-500 text-sm">الكمية: 1 كجم</p>
+                <p class="text-green-700 font-semibold">₪ 15.5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="saved-products" class="content-section hidden">
+          <h2 class="text-xl font-bold text-[#064C50] mb-2">محفظتي</h2>
+          <div class="mony border-b border-[#E9F4F5] py-3">
+            <p class="font-medium text-[#415859]">لديك حاليا</p>
+            <p class="text-2xl font-bold text-[#064C50]">0.00 جم</p>
+          </div>
+          <p class="text-center mt-5 font-medium text-[#3F3F3F]">لا يوجد لديك أي معاملات سابقة</p>
+        </div>
+        <div id="list-of-sales" class="content-section hidden">
+          <h2 class="text-xl font-bold text-[#064C50]">قوائم رغباتك</h2>
+          <div class="overflow-x-auto">
+            <div class="md:w-full min-w-[688px]">
+              <div class="flex justify-between items-center my-3">
+                <p class="text-[#8C8C8C] w-1/3 text-start font-medium whitespace-nowrap">الاسم</p>
+                <p class="text-[#8C8C8C] w-1/3 text-start font-medium whitespace-nowrap">المنتجات</p>
+                <p class="text-[#8C8C8C] w-1/3 text-start font-medium whitespace-nowrap">الأعضاء</p>
+              </div>
+              <div class="lists-container">
+                <div data-target="list"
+                  class="links_ cursor-pointer list-items w-full bg-[#F4F4F4] border border-[#E3E3E3] flex justify-between items-center rounded-xl p-4 my-4">
+                  <div class="flex w-full justify-between">
+                    <p class="text-[#1A1A1A] w-1/3 text-start font-medium whitespace-nowrap">قائمتي</p>
+                    <p class="text-[#1A1A1A] w-1/3 text-start font-medium whitespace-nowrap">1 المنتجات </p>
+                    <div class="flex justify-start w-1/3 text-start items-center gap-2 whitespace-nowrap">
+                      <p class="text-[#1A1A1A] font-medium">أنت فقط</p>
+                      <button class="text-[#8C8C8C]">تعديل</button>
+                      <span>|</span>
+                      <button class="deleteBtn text-[#FF816C]">حذف</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="w-full addListBtn bg-[#fff] border border-[#AE862E] text-[#AE862E] px-4 py-4 cursor-pointer rounded-xl">إضافة
+            قائمة جديدة</button>
+        </div>
+        <div id="list" class="content-section hidden">
+          <div class="flex justify-between items-start">
+            <div>
+              <h2 class="text-xl font-bold text-[#064C50]">سلتي </h2>
+              <p class="text-[#064C50] mt-2">يمكن للمشاركين التعديل</p>
+            </div>
+            <p class="text-[#064C50] mt-2">لا يوجد مشاركون</p>
+          </div>
+          <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-4 space-y-4">
+            <div class="overflow-x-auto">
+
+              <div class="md:w-full min-w-[600px]">
+                <div class="flex justify-between items-center text-center border-b border-[#E6E6E6] pb-2">
+                  <p class="text-[#8C8C8C] text-base text-end">العناصر المطلوب شراؤها</p>
+                  <p class="text-[#8C8C8C] text-base text-end">الكمية</p>
+                  <p class="text-[#8C8C8C] text-base text-end">السعر</p>
+                </div>
+                <div class="flex items-center justify-between border-b border-gray-200 pb-4 mb-4 gap-8">
+                  <div class="flex flex-col items-center sm:flex-row justify-between sm:items-start w-[300px]" style="align-items: center;">
+                    <div class="checkbox-wrapper">
+                      <input type="checkbox" id="circleCheck" name="circleCheck">
+                    </div>
+                    <img src="../../assets/images/543989_main.jpg 2.png" alt="صورة المنتج"
+                      class="w-20 h-20 rounded-md mr-4" />
+                    <h3 class="text-sm sm:text-lg font-medium">
+                      شامبو ضد القشرة وتساقط الشعر - 360 مل
+                    </h3>
+                  </div>
+                  <div id="quantityCounter"
+                    class="border border-[#064C50] p-3 rounded-md flex items-center justify-between">
+                    <button id="decrement"
+                      class="text-[#064C50] cursor-pointer h-6 w-6 rounded-full border-2 border-[#046C50] text-xl flex justify-center items-center ml-6">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
+                      </svg>
+                    </button>
+                    <span id="quantity" class="text-[#064C50] font-bold text-lg">1</span>
+                    <button id="increment"
+                      class="text-[#064C50] cursor-pointer h-6 w-6 rounded-full border-2 border-[#046C50] text-xl flex justify-center items-center mr-6">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="py-3 cursor-pointer"><img src="../../assets/images/Frame 427318928.png" alt=""></button>
+                  <p class="font-bold text-[#0C0D0D] py-3">١٢ جنيه</p>
+                </div>
+                <div class="flex items-center justify-between border-b border-gray-200 pb-4 mb-4 gap-8">
+                  <div class="flex flex-col items-center sm:flex-row justify-between sm:items-start w-[300px]" style="align-items: center;">
+                    <div class="checkbox-wrapper">
+                      <input type="checkbox" id="circleCheck" name="circleCheck">
+                    </div>
+                    <img src="../../assets/images/543989_main.jpg 2.png" alt="صورة المنتج"
+                      class="w-20 h-20 rounded-md mr-4" />
+                    <h3 class="text-sm sm:text-lg font-medium">
+                      شامبو ضد القشرة وتساقط الشعر - 360 مل
+                    </h3>
+                  </div>
+                  <div id="quantityCounter"
+                    class="border border-[#064C50] p-3 rounded-md flex items-center justify-between">
+                    <button id="decrement"
+                      class="text-[#064C50] cursor-pointer h-6 w-6 rounded-full border-2 border-[#046C50] text-xl flex justify-center items-center ml-6">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
+                      </svg>
+                    </button>
+                    <span id="quantity" class="text-[#064C50] font-bold text-lg">1</span>
+                    <button id="increment"
+                      class="text-[#064C50] cursor-pointer h-6 w-6 rounded-full border-2 border-[#046C50] text-xl flex justify-center items-center mr-6">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="py-3 cursor-pointer"><img src="../../assets/images/Frame 427318928.png" alt=""></button>
+                  <p class="font-bold text-[#0C0D0D] py-3">١٢ جنيه</p>
+                </div>
+              </div>
+            </div>
+            <!-- زر الإضافة للسلة -->
+            <div class="pt-4">
+              <button class="w-full bg-[#064C50] hover:bg-teal-900 text-white py-3 rounded-md text-lg font-bold">
+                أضف المنتجات المحددة إلى السلة
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="address" class="content-section hidden">
+          <div class="savedTitels py-3 border-y border-[#E9F4F54D]">
+            <h2 class="text-xl font-bold mb-2 text-[#064C50]">العناوين المحفوظة</h2>
+            <div class="details">
+              <div class="flex justify-between pb-4">
+                <div>
+                  <p class="text-lg font-medium text-[#064C50]">العنوان الأساسي</p>
+                  <p class="text-[#415859]">Hisham aldahoudi</p>
+                  <p class="text-[#415859]">01645624789</p>
+                  <p class="text-[#415859] w-[258px]">ﺍﻟﺨﻠﻴﻔﺔ ﺍﻟﻤﺄﻣﻮﻥ - ﻣﺼﺮ ﺍﻟﺠﺪﻳﺪﺓ - ﻣﺤﺎﻓﻈﺔ ﺍﻟﻘﺎﻫﺮﺓ. ﺍﻟﻘﺎﻫﺮﺓ</p>
+                  <div class="flex justify-between items-center w-[208px] mt-5 gap-5">
+                    <button
+                      class="editAddress flex justify-start items-center gap-1 text-[#064C50] font-medium underline cursor-pointer links_"
+                      data-target="edit-address"><img src="../../assets/images/edit_.png" alt=""> تعديل</button>
+                    <button
+                      class="flex justify-start items-center text-[#E22219] gap-1 font-medium underline cursor-pointer"><img
+                        src="../../assets/images/delete.png" alt=""> حذف</button>
+                  </div>
+                </div>
+                <div class="ml-20">
+                  <p class="text-lg font-medium text-[#064C50]">العنوان الثانوي</p>
+                  <p class="text-[#415859]">Hisham aldahoudi</p>
+                  <p class="text-[#415859]">01645624789</p>
+                  <p class="text-[#415859] w-[208px]">ﺍﻟﺨﻠﻴﻔﺔ ﺍﻟﻤﺄﻣﻮﻥ - ﻣﺼﺮ ﺍﻟﺠﺪﻳﺪﺓ - ﻣﺤﺎﻓﻈﺔ ﺍﻟﻘﺎﻫﺮﺓ. ﺍﻟﻘﺎﻫﺮﺓ</p>
+                  <div class="flex justify-between items-center w-[208px] mt-5 gap-5">
+                    <button
+                      class="editAddress flex justify-start items-center gap-1 text-[#064C50] font-medium underline cursor-pointer links_"
+                      data-target="edit-address"><img src="../../assets/images/edit_.png" alt=""> تعديل</button>
+                    <button
+                      class="flex justify-start items-center text-[#E22219] gap-1 font-medium underline cursor-pointer"><img
+                        src="../../assets/images/delete.png" alt=""> حذف</button>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="canceledOrderBtn bg-[#064C50] cursor-pointer w-[213px] mt-5 text-white py-2 rounded hover:bg-teal-700">إضافة
+                عنوان جديد</button>
+
+            </div>
+          </div>
+        </div>
+        <div id="edit-address" class="content-section hidden">
+          <form action="">
+            <div class="savedTitels py-3 border-y border-[#E9F4F54D]">
+              <h2 class="text-xl font-bold mb-2 text-[#064C50]">تعديل العنوان</h2>
+              <div class="personalInfo mt-4">
+                <div class="flex justify-start items-center gap-2">
+                  <img src="../../assets/images/user-profile-square.png" alt="">
+                  <p class="font-bold text-lg text-[#415859]">المعلومات الشخصية</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="formGroup mt-2">
+                    <label for="nameAdd" class="text-[#555555]">الأسم</label>
+                    <input type="text" id="nameAdd" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5"
+                      placeholder="Mushtaha">
+                  </div>
+                  <div class="formGroup mt-2">
+                    <label for="secondName" class="text-[#555555]">اللقب</label>
+                    <input type="text" id="secondName" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5"
+                      placeholder="Mushtaha">
+                  </div>
+                  <div class="formGroup mt-2">
+                    <label for="phoneNumber" class="text-[#555555]">رقم الهاتف</label>
+                    <input type="text" id="phoneNumber" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5"
+                      placeholder="Mushtaha">
+                  </div>
+                </div>
+                <div class="flex justify-center items-center bg-[#F5FAFA] w-[360px] h-[155px] mt-5">
+                  <p class="text-lg font-medium text-[#000000]">لا يوجد موقع</p>
+                </div>
+                <button type="button"
+                  class="mapPopupBtn bg-[#064C50] cursor-pointer w-[213px] mt-5 text-white py-2 rounded hover:bg-teal-700">اضف
+                  موقع</button>
+              </div>
+              <div class="addressDetails mt-7">
+                <div class="flex justify-start items-center gap-2">
+                  <img src="../../assets/images/truck-fast.png" alt="">
+                  <p class="font-bold text-lg text-[#415859]">تفاصيل العنوان</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="formGroup mt-2">
+                    <label for="muhafaza" class="text-[#555555]">المحافظة</label>
+                    <select name="" id="muhafaza" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5">
+                      <option value="">القاهرة</option>
+                      <option value="">الجيزة</option>
+                    </select>
+                  </div>
+                  <div class="formGroup mt-2">
+                    <label for="addr" class="text-[#555555]">المنطقة</label>
+                    <select name="" id="addr" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5">
+                      <option value="">القاهرة</option>
+                      <option value="">الجيزة</option>
+                    </select>
+                  </div>
+                  <div class="formGroup mt-2">
+                    <label for="street" class="text-[#555555]">الحي</label>
+                    <select name="" id="street" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5">
+                      <option value="">القاهرة</option>
+                      <option value="">الجيزة</option>
+                    </select>
+                  </div>
+                  <div class="formGroup mt-2 col-span-2">
+                    <label for="street" class="text-[#555555]">العنوان</label>
+                    <input type="text" id="phoneNumber" class="border border-[#064C50] mt-2 w-full rounded-lg py-3 px-5"
+                      placeholder="Mushtaha">
+                  </div>
+                </div>
+                <div class="flex justify-start items-center gap-3 mt-5">
+                  <button
+                    class="canceledOrderBtn bg-[#064C50] cursor-pointer w-[213px] text-white py-2 rounded hover:bg-teal-700">حفظ
+                    العنوان</button>
+                  <button class="text-[#064C50] py-2 cursor-pointer underline">الغاء</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- start footer -->
+  <footer class="bg-[#064C50] py-12">
+    <div class="container mx-auto">
+      <div class="footer flex flex-col gap-8">
+        <!-- Top Section -->
+        <div
+          class="flex flex-col justify-center items-center lg:justify-between lg:items-start text-white border-b border-[#FFFFFF1A] pb-8 lg:flex-row">
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">خدمة العملاء</p>
+            <a href="" class="my-2">الأسئلة الشائعة</a>
+            <a href="" class="my-2">اتصل بنا</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">عن فريش ماركت</p>
+            <a href="" class="my-2">معلومات عنا</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">المزيد من فريش ماركت</p>
+            <a href="" class="my-2">الشروط والأحكام</a>
+            <a href="" class="my-2">سياسة الخصوصية</a>
+            <a href="" class="my-2">قدم لنا ملاحظاتك</a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">تحميل تطبيق الجوال</p>
+            <a href="" class="my-2 flex justify-end items-center rounded-lg p-1 gap-2 border border-white md:w-[160px]">
+              <div class="apple text-end text-white">
+                <p class="font-medium">Download on the</p>
+                <p class="font-bold text-xl">App Store</p>
+              </div>
+              <img src="../../assets/images/footer/Vector 2.png" alt="">
+            </a>
+            <a href="" class="my-2 flex justify-end items-center rounded-lg p-1 gap-2 border border-white md:w-[160px]">
+              <div class="apple text-end text-white">
+                <p class="font-medium">GET IT ON</p>
+                <p class="font-bold text-xl ">Google Play</p>
+              </div>
+              <img src="../../assets/images/footer/Group.png" alt="">
+            </a>
+          </div>
+          <div class="flex flex-col items-center lg:items-start gap-2">
+            <p class="font-bold text-lg">تابعونا على مواقع التواصل الاجتماعي</p>
+            <div class="social flex flex-row justify-between items-center gap-2">
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/twitter logo.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector (1).png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector 4.png" alt=""></a>
+              <a href="" class="w-10 h-10 flex justify-center items-center rounded-full border border-white"><img
+                  src="../../assets/images/footer/Vector 3.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="flex justify-between items-center text-white text-sm">
+          <p>© جميع الحقوق محفوظة 2024 | freshmarket</p>
+
+          <div class="flex items-center gap-4">
+            <p>يمكنك الدفع باستخدام</p>
+            <img src="../../assets/images/footer/Frame 41125881.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../../assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     <script src="../../assets/js/sittings.js"></script>
+</body>
+
+</html>
