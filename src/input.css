@@ -99,29 +99,7 @@ header {
   pointer-events: none;
   z-index: 10;
 }
-.shimmer-card {
-  width: 222px;
-  height: 340px;
-  border-radius: 1rem;
-  background: linear-gradient(
-    90deg,
-    #f0f0f0 25%,
-    #e0e0e0 37%,
-    #f0f0f0 63%
-  );
-  background-size: 400% 100%;
-  animation: shimmer 1.2s infinite;
-  margin: auto;
-}
 
-@keyframes shimmer {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}
 .cart-item, .cart-actions {
   opacity: 0;
   transform: translateY(20px); /* يبدأ من الأسفل */
@@ -184,7 +162,7 @@ input[type="range"]::-moz-range-thumb {
   -webkit-appearance: none;
   width: 24px;
   height: 24px;
-  border: 2px solid #4CAF50;
+  border: 2px solid #ebebeb;
   border-radius: 50%;
   background-color: #fff;
   cursor: pointer;
@@ -207,7 +185,21 @@ input[type="range"]::-moz-range-thumb {
   background-color: white;
   display: none;
 }
-
+.stars_{
+  width: 100% !important;
+}
+.w79{
+  width: 79% !important;
+}
+.w8{
+  width: 8% !important;
+}
+.w2{
+  width: 2% !important;
+}
+.w3{
+  width: 3% !important;
+}
 .checkbox-wrapper input[type="checkbox"]:checked::after {
   display: block;
 }
@@ -383,7 +375,9 @@ input[type="range"]::-moz-range-thumb {
   margin:0 !important;
   padding: 0 !important;
 }
-
+.foot{
+  width: 165px;
+}
 .container {
   width: 86% !important;
 
@@ -407,11 +401,13 @@ input[type="range"]::-moz-range-thumb {
     max-width: 96rem;
   }
 }
-
-@media (min-width: 1024px) and (max-width: 1300px) {
-  body{
-    background-color: black !important;
+@media screen and (min-width: 1200px) {
+  .filtering{
+    width: 35% !important;
   }
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+ 
   .paraHeader{
     display: none;
   }
@@ -436,9 +432,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width: 723px) and (max-width: 1024px) {
-  body{
-    background-color: blue !important;
-  }
+ 
   .paraHeader{
     display: none;
   }
@@ -512,9 +506,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:614px) and (max-width: 723px) {
-  body{
-    background-color: pink !important;
-  }
+ 
   .product-card{
     width: 260px;
   }
@@ -611,9 +603,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (max-width: 614px) {
-  body{
-    background-color: red !important;
-  }
+ 
   .product-card{
     width: 220px;
   }
@@ -742,9 +732,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (max-width: 520px) {
-  body{
-    background-color: sienna !important;
-  }
   .product-card{
     width: 100% !important;
   }
@@ -852,9 +839,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (max-width: 448px) {
-  body{
-    background-color: violet !important;
-  }
+
   .maraka{
     width: 150px !important;
   }
@@ -967,9 +952,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media screen and (max-width: 376px) {
-  body{
-    background-color: lightblue !important;
-  }
+ 
   .paraHeader{
     display: none;
   }

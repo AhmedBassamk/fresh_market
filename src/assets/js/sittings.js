@@ -1,4 +1,21 @@
-  // Add mobile menu toggle functionality
+$('.orderd_').click(function (e) {
+  e.preventDefault();
+  const $target = $(e.target);
+
+  if ($target.text() == 'تم الطلب') {
+    $target.text('canceled');
+    $target.parent().siblings('.data_info').removeClass('justify-between').addClass('justify-end');
+    $target.parent().siblings('.data_info').find('.orderd_hide_info_').hide();
+    console.log($target.parent().siblings('.data_info').find('.orderd_hide_info_'));
+
+  } else {
+    $target.text('تم الطلب');
+    $target.parent().siblings('.data_info').removeClass('justify-end').addClass('justify-between');
+    $target.parent().siblings('.data_info').find('.orderd_hide_info_').show();
+    console.log($target.parent().siblings('.data_info').find('.orderd_hide_info_'));
+  }
+});
+ // Add mobile menu toggle functionality
   $('#mobileMenuToggle').click(function () {
     $('#sideMenu').slideToggle();
   });
@@ -56,3 +73,10 @@
   duration: 1,
   ease: "power4.out",  // تأثير حركي سلس
 });
+$('.deleteAddress').click(function (e) {
+  e.preventDefault();
+  const $target = $(e.target);
+  $target.parent().parent().parent().remove() 
+  console.log('sexy ');
+  
+})

@@ -1,3 +1,23 @@
+ // عرض الصورة للمنتج مع امكانية اضافة فيديو
+ var top_sec = document.querySelectorAll(".card_img, .card_video");
+ var top_show_img = document.querySelector(".top_show");
+ var top_show_video = document.querySelector("video.top_show");
+
+ Array.from(top_sec).forEach((elements) => {
+   elements.addEventListener("click", function (eo) {
+     if (elements.tagName === 'IMG') {
+       top_show_img.src = elements.src;
+       top_show_img.style.display = 'block';
+       top_show_video.style.display = 'none';
+     } else if (elements.tagName === 'VIDEO') {
+       top_show_video.src = elements.src;
+       top_show_video.style.display = 'block';
+       top_show_img.style.display = 'none';
+     }
+   });
+ });
+
+ 
 gsap.registerPlugin(ScrollTrigger);
 
     // الصورة الكبيرة

@@ -1,3 +1,57 @@
+  // payment page
+  $(('.nextStepButton')).click(() => {
+    $('.nextStepButton').parent().hide();
+    $('.shippingHeaders').hide();
+    $('.shahen').fadeIn();
+    $('.step1Overview').fadeIn();
+    $('.step2').fadeIn();
+  })
+// payment steps
+$('input[name="address"]').each(function (indexInArray, valueOfElement) {
+  $(valueOfElement).change((e) => {
+    var address = $(valueOfElement).val()
+    console.log(address);
+    var position = address.indexOf(",")
+    var name = address.substring(0, position)
+    var number = address.substring(position + 1).trim()
+    $('.shippingDetails').text(name)
+    $('.shippingDetails2').text(number)
+  });
+});
+
+
+$('input[name="way"]').each(function (indexInArray, valueOfElement) {
+  $(valueOfElement).change((e) => {
+    var way = $(valueOfElement).val()
+    console.log(way);
+  });
+});
+
+$('input[name="ctime"]').each(function (indexInArray, valueOfElement) {
+  $(valueOfElement).change((e) => {
+    var ctime = $(valueOfElement).val()
+    console.log(ctime);
+    $('.time_').text(ctime)
+
+  });
+});
+$('input[name="shippingDate"]').change(function () {
+  var shippingDate = $(this).val();
+  console.log(shippingDate);
+
+  if (shippingDate) {
+    var dateObj = new Date(shippingDate);
+    var days = ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+    var dayName = days[dateObj.getDay()];
+
+    $('.day').text(shippingDate + " - " + dayName);
+  } else {
+    $('.day').text("");
+  }
+});
+
+
+
 gsap.from(".shippingHeaders", {
     opacity: 0,
     y: -50,
@@ -89,3 +143,29 @@ gsap.from(".shippingHeaders", {
     ease: "power2.out",
     delay: 0.3
   });
+  $('input[name="time"]').each(function (indexInArray, valueOfElement) {
+    $(valueOfElement).change((e) => {
+      var time = $(valueOfElement).val()
+      console.log(time);
+      if (time === 'حدد موعد') {
+        $('.chooseTime').fadeIn();
+        console.log(time);
+
+      } else {
+        console.log(time + 'else');
+        $('.chooseTime').fadeOut();
+      }
+    });
+  });
+   $('.shippingTime').hide();
+  $('input[name="way"]').change(function (e) { 
+    e.preventDefault();
+    if ($(this).val() === "الشحن المنزلي") {
+      $('.shippingTime').fadeIn();
+    } else {
+      $('.shippingTime').fadeOut();
+    $('.chooseTime').fadeOut();
+
+    }
+  });
+  
