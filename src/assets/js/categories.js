@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".pannerImg img", {
@@ -74,3 +76,4 @@ var swiper = new Swiper(".mySwiper", {
         },
       },
     });
+  });

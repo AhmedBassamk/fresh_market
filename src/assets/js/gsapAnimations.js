@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 gsap.to(".cart-item", {
     opacity: 1,
     y: 0,
@@ -68,3 +70,4 @@ document.getElementById('decrement').addEventListener('click', () => {
     delay: 0.5,  // تأخير لتظهر بشكل متأخر قليلاً
     ease: "power4.out",
   });
+});

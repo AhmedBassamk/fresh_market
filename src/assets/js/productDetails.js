@@ -1,3 +1,5 @@
+$(document).ready(function () {
+ 
  // عرض الصورة للمنتج مع امكانية اضافة فيديو
  var top_sec = document.querySelectorAll(".card_img, .card_video");
  var top_show_img = document.querySelector(".top_show");
@@ -82,3 +84,4 @@ gsap.registerPlugin(ScrollTrigger);
         }
       });
     });
+  });

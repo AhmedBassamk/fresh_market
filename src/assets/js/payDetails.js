@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 gsap.from("h1", {
     opacity: 0,
     y: 30,
@@ -32,3 +34,5 @@ gsap.from("h1", {
     delay: 1.4,
     ease: "power2.out"
   });
+});
+

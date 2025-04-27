@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 $('#filterToggle').click(function () {
     $('.filterContent').slideToggle();
     console.log('asfkmkdmsdk');
@@ -10,3 +12,4 @@ $('#filterToggle').click(function () {
       $('#sideMenu').show();
     }
   });
+});

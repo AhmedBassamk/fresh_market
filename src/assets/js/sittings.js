@@ -1,3 +1,4 @@
+$(document).ready(function () {
 $('.orderd_').click(function (e) {
   e.preventDefault();
   const $target = $(e.target);
@@ -79,4 +80,5 @@ $('.deleteAddress').click(function (e) {
   $target.parent().parent().parent().remove() 
   console.log('sexy ');
   
+})
 })

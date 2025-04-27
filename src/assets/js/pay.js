@@ -1,3 +1,5 @@
+$(document).ready(function () {
+  
   // payment page
   $(('.nextStepButton')).click(() => {
     $('.nextStepButton').parent().hide();
@@ -168,4 +170,6 @@ gsap.from(".shippingHeaders", {
 
     }
   });
+});
+
   

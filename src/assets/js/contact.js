@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 gsap.registerPlugin(ScrollTrigger);
 
 // 1) تأثير عند ظهور الصفحة على الصور والنصوص
@@ -73,4 +75,5 @@ sendButton.addEventListener("mouseleave", () => {
     duration: 0.3,
     ease: "power2.in",
   });
+});
 });

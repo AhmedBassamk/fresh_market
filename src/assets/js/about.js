@@ -1,3 +1,5 @@
+$(document).ready(function () {
+ 
  // Map functionality
       // let map;
       // let marker;
@@ -268,4 +270,5 @@
       function resetLocation() {
         locationPlaceholder.innerHTML = `<p class="text-lg font-medium text-[#000000]">لا يوجد موقع</p>`;
       }
+    });
      

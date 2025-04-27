@@ -1,3 +1,4 @@
+$(document).ready(function () {
 gsap.to(".commentProductCard", {
     opacity: 1,
     y: 0,
@@ -50,3 +51,4 @@ gsap.utils.toArray('.commentProductCard').forEach(card => {
     }
   });
   });
+});
